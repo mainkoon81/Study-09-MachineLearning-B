@@ -37,8 +37,8 @@ array([ 23.68420569])
  - Goal: Improve our model & Avoid overfitting.
  - Idea: Take the complexity of the model into account when we calculate the error. If we find a way to increment the error by some function of the `coefficients`, it would be great because in some way the complexity of our model will be added into the error so a complex model will have a larger error than a simple model. We respect that the simpler model have a tendency to generalize better.  
  - Question is...What if we punish the complicated model too little or punish it too much ? 
-   - a model to send the rocket to the moon or a medical model have very little room for error so we're ok with some complexity.
-   - a model to recommend potential friends have more room for experimenting and need to be simpler and faster to run on big data.
+   - a model to send the rocket to the moon or a medical model have very **little room for error** so we're ok with some complexity.
+   - a model to recommend potential friends have **more room for experimenting** and need to be simpler and faster to run on big data.
    - For every case, we have to tune how much we want to punish complexity in each model. This can be fixed with a parameter called 'lambda'. 
      - If having a small lambda: multiply the complexity error by a small lambda (it won't swing the balance - "complex model wins".)
      - If having a large lambda: multiply the complexity error by a large lambda (it punishes the complex model more - "simple model wins".)

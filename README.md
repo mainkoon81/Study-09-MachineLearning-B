@@ -13,7 +13,7 @@ print(model.predict([ [127], [248] ]))
 [[ 438.94308857, 127.14839521]]...The reason for predicting on an array like [127] and not just 127, is because we can have a model that makes a prediction using multiple features. 
 
 ##### Multiple Predictors
- - : The dataset consists of 13 features of 506 houses and their median value in $1000's. We fit a model on the 13 features to predict on the value of houses.
+ - : The dataset consists of 13 features of 506 houses and their median value in $1000's. We fit a model on the 13 features to predict on the value of houses, i.e 'x' has 506 lists. 
 ```
 from sklearn.datasets import load_boston
 boston_data = load_boston()

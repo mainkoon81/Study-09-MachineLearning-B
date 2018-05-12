@@ -154,22 +154,70 @@ ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
 ```
 
 
-## Perceptron Algorithm for Neural Network
+## Perceptron Algorithm for "Neural-Network"
  - For categoric data (Y/N)
 <img src="https://user-images.githubusercontent.com/31917400/39957980-d507b40e-55f3-11e8-80e1-debf35768067.jpg" />
  
 ### Perceptron
  - Perceptron refers a combination of nodes
- - Perceptron can be a logical operator
- - 
- 
-<img src="https://user-images.githubusercontent.com/31917400/39957980-d507b40e-55f3-11e8-80e1-debf35768067.jpg" />
+ - Perceptron can be a logical operator: AND, OR, NOT, XOR. They can be represented as perceptrons.
+   - Take two inputs then returns an output.
+<img src="https://user-images.githubusercontent.com/31917400/39961662-1ae6cf48-5633-11e8-8d08-0a8546ed2c26.jpg" />
 
+```
+import pandas as pd
 
+test_inputs = [(0, 0), (0, 1), (1, 0), (1, 1)]
+correct_outputs = [False, False, False, True]
+outputs = []
 
+for test_input, correct_output in zip(test_inputs, correct_outputs):
+    linear_combination = weight1 * test_input[0] + weight2 * test_input[1] + bias
+    output = int(linear_combination >= 0)
+    is_correct_string = 'Yes' if output == correct_output else 'No'
+    outputs.append([test_input[0], test_input[1], linear_combination, output, is_correct_string])
 
+num_wrong = len([output[4] for output in outputs if output[4] == 'No'])
+output_frame = pd.DataFrame(outputs, columns=['Input 1', '  Input 2', '  Linear Combination', '  Activation Output', '  Is Correct'])
+if not num_wrong:
+    print('Nice!  You got it all correct.\n')
+else:
+    print('You got {} wrong.  Keep trying!\n'.format(num_wrong))
+print(output_frame.to_string(index=False))
+```
+1) **AND** Perceptron: weights and bias ?
+```
+weight1 = 1.0
+weight2 = 1.0
+bias = -2.0
+```
+2) **OR** Perceptron: weights and bias ?
+ - two ways to go from an AND perceptron to an OR perceptron.
+   - increase the weights
+   - decrease the magnitude of the bias
+```
+weight1 = 2.0
+weight2 = 2.0
+bias = -2.0
 
-
+weight1 = 1.0
+weight2 = 1.0
+bias = -1.0
+```
+3) **NOT** Perceptron: weights and bias ? 
+ - the NOT operation only cares about one input. 
+   - The operation returns a '0' **if the input is 1**.  
+   - The operation returns a '1' **if it's a 0**. 
+   - The other inputs to the perceptron are ignored. If we ignore the first input, then...
+```
+weight1 = 0.0
+weight2 = -2.0
+bias = 1.0
+```
+4) **XOR** Multi-Layer Perceptron(cross-OR ?)
+ - What if we cannot build the decision surface ?
+   - Combine perceptions: "the output of one = the input of another one"...'Neural Network'
+   
 
 
 

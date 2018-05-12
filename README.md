@@ -163,7 +163,7 @@ ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
  - Perceptron refers a combination of nodes
  - Perceptron can be a logical operator: AND, OR, NOT, XOR. They can be represented as perceptrons.
    - Take two inputs then returns an output.
-<img src="https://user-images.githubusercontent.com/31917400/39961662-1ae6cf48-5633-11e8-8d08-0a8546ed2c26.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/39961806-b1513700-5635-11e8-9edf-f3cde879577c.jpg" />
 
 ```
 import pandas as pd

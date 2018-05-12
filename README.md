@@ -159,7 +159,11 @@ ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
 <img src="https://user-images.githubusercontent.com/31917400/39957980-d507b40e-55f3-11e8-80e1-debf35768067.jpg" />
  
 ### Perceptron
-
+ - Perceptron refers a combination of nodes
+ - Perceptron can be a logical operator
+ - 
+ 
+<img src="https://user-images.githubusercontent.com/31917400/39957980-d507b40e-55f3-11e8-80e1-debf35768067.jpg" />
 
 
 

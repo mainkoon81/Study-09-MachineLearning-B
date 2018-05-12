@@ -44,8 +44,111 @@ array([ 23.68420569])
      - If having a large lambda: multiply the complexity error by a large lambda (it punishes the complex model more - "simple model wins".)
 <img src="https://user-images.githubusercontent.com/31917400/39946131-e7c5a1da-5564-11e8-83f5-3f2e8e7c021d.jpg" />
 
+## Linear Regression - Generalized_01 (Logistic)
+**[Find a DecisionSurface!]** 
+> PREDICTION: based on the line best cut the data, we can guess 'pass/fail' of new student.
+ - The number of errors is not what we want to minimize.
+ - Instead we want to minimize sth that captures the number of errors called 'Log-loss function'.
+   - The 'error function' will assign a large/small **penalty** to the incorrectly/correctly classified points.  
+   - then we juggle the line around to minimize the sum of penalities(minimizing the error function)
+<img src="https://user-images.githubusercontent.com/31917400/39021406-93efa878-4428-11e8-8bac-04d841fbbf16.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/34471521-d497e2bc-ef43-11e7-8e70-5d232b659be0.jpg" />
 
+**Typical Approach**
+ - Fitting a logistic regression to a dataset where we would like to predict if a transaction is fraud or not.
+<img src="https://user-images.githubusercontent.com/31917400/34495490-4fb25f96-efed-11e7-8fb0-5eadb50da2d0.jpg" width="160" height="50" />
 
+As we can see, there are two columns that need to be changed to dummy variables. Use the 1 for weekday and True, and 0 otherwise.
+```
+df['weekday'] = pd.get_dummies(df['day'])['weekday']
+df[['not_fraud','fraud']] = pd.get_dummies(df['fraud'])
+
+df = df.drop('not_fraud', axis=1)
+df.head(2)
+```
+<img src="https://user-images.githubusercontent.com/31917400/34495708-4c4fd206-efee-11e7-8a32-1f419d1aa80e.jpg" width="200" height="50" />
+
+The proportion of fraudulent, weekday... transactions...?
+```
+print(df['fraud'].mean())
+print(df['weekday'].mean())
+print(df.groupby('fraud').mean()['duration'])
+```
+<img src="https://user-images.githubusercontent.com/31917400/34495836-e1ec77ba-efee-11e7-826c-fc707de638ce.jpg" width="120" height="50" />
+
+Fit a logistic regression model to predict if a transaction is fraud using both day and duration. Don't forget an intercept! Instead of 'OLS', we use 'Logit'
+```
+df['intercept'] = 1
+
+log_model = sm.Logit(df['fraud'], df[['intercept', 'weekday', 'duration']])
+result = log_model.fit()
+result.summary()
+```
+<img src="https://user-images.githubusercontent.com/31917400/34496037-d41f3d2e-efef-11e7-85b9-d88c9d2faa30.jpg" width="400" height="100" />
+
+Coeff-interpret: we need to exponentiate our coefficients before interpreting them.
+```
+# np.exp(result.params)
+np.exp(2.5465)
+np.exp(-1.4637), 100/23.14
+```
+12.762357271496972, (0.23137858821179411, 4.32152117545376)
+
+>On weekdays, the chance of fraud is 12.76 (e^2.5465) times more likely than on weekends...holding 'duration' constant. 
+
+>For each min less spent on the transaction, the chance of fraud is 4.32 times more likely...holding the 'weekday' constant. 
+
+*Note: When you find the ordinal variable with numbers...Need to convert to the categorical variable, then
+```
+df['columns'].astype(str).value_counts()
+```
+
+**Diagnostics**
+```
+import numpy as np
+import pandas as pd
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix, precision_score, recall_score, accuracy_score
+from sklearn.model_selection import train_test_split
+```
+ - __Confusion Matrix__
+   - Recall: 'reality'(Out of all the items that are **truly positive**): TP / TP+FN
+   - Precision 'argued'(Out of all the items **labeled as positive**): TP / TP+FP
+<img src="https://user-images.githubusercontent.com/31917400/35222988-c9570fce-ff77-11e7-82b9-7ccd3855bd50.jpg" />
+
+ - Next, it is useful to split your data into training and testing data to assure your model can predict well not only on the data it was fit to, but also on data that the model has never seen before. Proving the model performs well on test data assures that you have a model that will do well in the future use cases. Let's pull off X and y first. Create your test set as 10% of the data, and use a random state of 0. 
+```
+X = df[['intercept', 'weekday', 'duration']]
+y = df['fraud']
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.10, random_state=0)
+```
+The usual steps are:
+ - Instantiate
+ - Fit (on train)
+ - Predict (on test)
+ - Score (compare predict to test)
+```
+log_model = LogisticRegression()
+log_model.fit(X_train, y_train)
+pred = log_model.predict(X_test)
+
+print(accuracy_score(y_test, pred))
+print(recall_score(y_test, pred))
+print(precision_score(y_test, pred))
+confusion_matrix(y_test, pred)
+```
+Roc Curve: The ideal case is for this to shoot all the way to the upper left hand corner. 
+```
+from ggplot import *
+from sklearn.metrics import roc_curve, auc
+
+preds = log_mod.predict_proba(X_test)[:,1]
+fpr, tpr, _ = roc_curve(y_test, preds)
+
+df = pd.DataFrame(dict(fpr=fpr, tpr=tpr))
+ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
+```
 
 
 

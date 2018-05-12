@@ -238,10 +238,13 @@ bias = 1.0
 <img src="https://user-images.githubusercontent.com/31917400/39961894-2f16c9f0-5638-11e8-86c0-364cec797eb0.jpg" />
 
 ### Algorithm
-<img src="https://user-images.githubusercontent.com/31917400/39962316-f8aa3c16-5642-11e8-99d0-df541b869281.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/39962325-8ef2c062-5643-11e8-8bef-c7e7adbf472d.jpg" />
 
+> Example
+<img src="https://user-images.githubusercontent.com/31917400/39962358-1e4b224a-5644-11e8-83ff-aa02165e53da.jpg" />
 
-
+Recall that the perceptron step works as follows. For a point with coordinates(p,q), label y, and prediction given by the equation
+<img src="https://user-images.githubusercontent.com/31917400/39962371-6a23c65e-5644-11e8-9a07-14f334e0ef3e.jpg" />
 
 
 

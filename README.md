@@ -217,6 +217,7 @@ bias = 1.0
 4) **XOR** Multi-Layer Perceptron(cross-OR ?)
  - What if we cannot build the decision surface ?
    - Combine perceptions: "the output of one = the input of another one"...'Neural Network'
+<img src="https://user-images.githubusercontent.com/31917400/39961747-d552235e-5634-11e8-99ce-aed8a2aae548.jpg" />
    
 
 

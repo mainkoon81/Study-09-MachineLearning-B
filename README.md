@@ -51,6 +51,7 @@ array([ 23.68420569])
  - Instead we want to minimize sth that captures the number of errors called 'Log-loss function'.
    - The 'error function' will assign a large/small **penalty** to the incorrectly/correctly classified points.  
    - then we juggle the line around to minimize the sum of penalities(minimizing the error function)
+   - Here, 'p' is the probability or proportion.
 <img src="https://user-images.githubusercontent.com/31917400/39021406-93efa878-4428-11e8-8bac-04d841fbbf16.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/34471521-d497e2bc-ef43-11e7-8e70-5d232b659be0.jpg" />
 

@@ -1,7 +1,8 @@
 # Study-09-MachineLearning-[Supervised Learning]
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-## Linear Regression (for numeric data. when 'y' follows Normal-Dist)
+## Linear Regression (when 'y' follows Normal-Dist)
+ - For numeric data
 ##### Single value
 ```
 from sklearn.linear_model import LinearRegression
@@ -45,6 +46,7 @@ array([ 23.68420569])
 <img src="https://user-images.githubusercontent.com/31917400/39946131-e7c5a1da-5564-11e8-83f5-3f2e8e7c021d.jpg" />
 
 ## Linear Regression - Generalized_01 (Logistic: when 'y' follows Binomial Dist)
+ - For categoric data
 **[Find a DecisionSurface!]** 
 > PREDICTION: based on the line best cut the data, we can guess 'pass/fail' of new student.
  - The number of errors is not what we want to minimize.
@@ -152,6 +154,8 @@ ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
 ```
 
 
-
-
+## Perceptron Algorithm with Neural Network
+ - For categoric data (Y/N)
+<img src="https://user-images.githubusercontent.com/31917400/39957980-d507b40e-55f3-11e8-80e1-debf35768067.jpg" />
+ 
 

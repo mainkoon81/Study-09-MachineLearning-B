@@ -154,6 +154,18 @@ ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
 ```
 
 
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
 ## Perceptron Algorithm for "Neural-Network"
  - For categoric data (Y/N)
  - Out model has 'input features', 'weights', 'bias'
@@ -220,11 +232,13 @@ bias = 1.0
    - Combine perceptions: "the output of one = the input of another one"...'Neural Network'
 <img src="https://user-images.githubusercontent.com/31917400/39961747-d552235e-5634-11e8-99ce-aed8a2aae548.jpg" />
 
-
-### Perceptron Trick
+### Perceptron Trick 
  - Now that we've learned that the points that are misclassified, and want the line to move closer to them. How to modify the equation of the line, so that it comes closer to a particular point?
+ - Here is the example. Need to repeat this until the point becomes well-classified (For blue point, need to repeat 10 times).
 <img src="https://user-images.githubusercontent.com/31917400/39961894-2f16c9f0-5638-11e8-86c0-364cec797eb0.jpg" />
 
+### Algorithm
+<img src="https://user-images.githubusercontent.com/31917400/39962316-f8aa3c16-5642-11e8-99d0-df541b869281.jpg" />
 
 
 

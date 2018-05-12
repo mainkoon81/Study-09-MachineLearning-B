@@ -1,7 +1,7 @@
 # Study-09-MachineLearning-[Supervised Learning]
 
 ----------------------------------------------------------------------------------------------------------------------------------------
-## Linear Regression (for numeric data)
+## Linear Regression (for numeric data. when 'y' follows Normal-Distribution)
 ##### Single value
 ```
 from sklearn.linear_model import LinearRegression
@@ -44,7 +44,7 @@ array([ 23.68420569])
      - If having a large lambda: multiply the complexity error by a large lambda (it punishes the complex model more - "simple model wins".)
 <img src="https://user-images.githubusercontent.com/31917400/39946131-e7c5a1da-5564-11e8-83f5-3f2e8e7c021d.jpg" />
 
-## Linear Regression - Generalized_01 (Logistic)
+## Linear Regression - Generalized_01 (Logistic: when 'y' follows binomial distribution)
 **[Find a DecisionSurface!]** 
 > PREDICTION: based on the line best cut the data, we can guess 'pass/fail' of new student.
  - The number of errors is not what we want to minimize.

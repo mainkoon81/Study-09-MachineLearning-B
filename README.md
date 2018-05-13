@@ -172,7 +172,7 @@ ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
  - For categoric data (Y/N)
 <img src="https://user-images.githubusercontent.com/31917400/39047770-10482214-4493-11e8-8103-03c5425c0534.jpg" />   
  
- - Out model has 'input features', 'weights', 'bias'
+ - Our model has 'input data-pt', 'weights', 'bias'
 <img src="https://user-images.githubusercontent.com/31917400/39957980-d507b40e-55f3-11e8-80e1-debf35768067.jpg" />
  
 ### Perceptron

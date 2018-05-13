@@ -1,7 +1,7 @@
 # Study-09-MachineLearning-[Supervised Learning]
-
+ - Let's find the Decision Surface!
 ----------------------------------------------------------------------------------------------------------------------------------------
-## Linear Regression (when 'y' follows Normal-Dist)
+## (A1) Linear Regression (when 'y' follows Normal-Dist)
  - For numeric data
 ##### Single value
 ```
@@ -45,7 +45,7 @@ array([ 23.68420569])
      - If having a large lambda: multiply the complexity error by a large lambda (it punishes the complex model more - "simple model wins".)
 <img src="https://user-images.githubusercontent.com/31917400/39946131-e7c5a1da-5564-11e8-83f5-3f2e8e7c021d.jpg" />
 
-## Linear Regression - Generalized_01 (Logistic: when 'y' follows Binomial Dist)
+## (A2) Linear Regression - Generalized_01 (Logistic: when 'y' follows Binomial Dist)
  - For categoric data
 **[Find a DecisionSurface!]** 
 > PREDICTION: based on the line best cut the data, we can guess 'pass/fail' of new student.
@@ -153,7 +153,7 @@ df = pd.DataFrame(dict(fpr=fpr, tpr=tpr))
 ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
 ```
 
-## DecisionTree
+## (B) DecisionTree
  - 
 
 
@@ -170,6 +170,8 @@ ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
 -------------------------------------------------------------------------------------------------------------------------------------
 ## Perceptron Algorithm for "Neural-Network"
  - For categoric data (Y/N)
+<img src="https://user-images.githubusercontent.com/31917400/39047770-10482214-4493-11e8-8103-03c5425c0534.jpg" />   
+ 
  - Out model has 'input features', 'weights', 'bias'
 <img src="https://user-images.githubusercontent.com/31917400/39957980-d507b40e-55f3-11e8-80e1-debf35768067.jpg" />
  

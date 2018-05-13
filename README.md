@@ -243,7 +243,7 @@ bias = 1.0
 > Example
 <img src="https://user-images.githubusercontent.com/31917400/39962358-1e4b224a-5644-11e8-83ff-aa02165e53da.jpg" />
 
-Recall that the perceptron step works as follows. For a point with coordinates(p,q), label y, and prediction given by the equation
+Recall that the perceptron step works as follows. For a **point** with coordinates(p,q), label y, and prediction given by the equation
 <img src="https://user-images.githubusercontent.com/31917400/39962371-6a23c65e-5644-11e8-9a07-14f334e0ef3e.jpg" />
 
 <img src="https://user-images.githubusercontent.com/31917400/39962396-125a87ae-5645-11e8-9253-11d4addaf568.jpg" />

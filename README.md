@@ -220,6 +220,7 @@ Which is 1, so it's a fucked up entropy.
 
  - DecisionTree tries to maximize the **Information Gain**
  - 
+<img src="https://user-images.githubusercontent.com/31917400/40004742-4081a582-578e-11e8-8e20-e2b8a6b40137.jpg" />  
 <img src="https://user-images.githubusercontent.com/31917400/38381197-f0b8b832-38fd-11e8-83da-db0be6a464ec.jpg" />  
 
 

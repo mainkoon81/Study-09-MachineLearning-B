@@ -226,10 +226,12 @@ DecisionTree picked the maximum **Information Gain**
 <img src="https://user-images.githubusercontent.com/31917400/38381197-f0b8b832-38fd-11e8-83da-db0be6a464ec.jpg" />  
 <img src="https://user-images.githubusercontent.com/31917400/40007308-50a9a350-5794-11e8-80be-ff1449721e92.jpg" />  
 
-### RandomForests
+## RandomForests
+<img src="https://user-images.githubusercontent.com/31917400/40016638-daa76b40-57ae-11e8-8086-077ad0a9f8b4.jpg" />  
 
-
-
+What if we have so many columns? ---- Warning of Overfitting !!! How to solve ?
+ - 1) Pick some of the columns randomly  
+ - 2) Build a DecisionTree 
 
 
 

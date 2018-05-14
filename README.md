@@ -254,6 +254,86 @@ What if we have so many columns? ---- Warning of Overfitting !!! How to solve ?
 ## EnsembleMethods >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## (C) Naive Bayes
+ - For categoric data
+> PREDICTION: when future emails come, we can combine these features to guess if they are spam or not. 
+
+<img src="https://user-images.githubusercontent.com/31917400/39019180-5566df3e-4420-11e8-9f87-dad95387ce6c.jpg" />
+
+ - Library: sklearn.naive_bayes (Gaussian)
+ - Example: Compute the accuracy of your Naive Bayes classifier. Accuracy is defined as the number of test points that are classified correctly divided by the total number of test points.
+```
+def NBAccuracy(features_train, labels_train, features_test, labels_test):
+    from sklearn.naive_bayes import GaussianNB
+    clf = GaussianNB()    ### create classifier ###
+    clf.fit(features_train, labels_train)    ### fit the classifier on the training features and labels ###
+    pred = clf.predict(features_test)    ### use the trained classifier to predict labels for the test features ###
+
+    ### calculate and return the accuracy on the test data. ### 
+    accuracy = clf.score(features_test, labels_test)
+    return(accuracy)
+    
+    ### or we can use 'sklearn accuracy' ###
+    from sklearn.metrics import accuracy_score
+    print(accuracy_score(pred, labels_test))
+```
+It throws an accuracy of 88.4% which means 88.4% of the points are being correctly labelled by our classifier-'clf' when we use our test-set ! 
+
+>__Bayes Rule:__ 
+<img src="https://user-images.githubusercontent.com/31917400/34920230-5115b6b6-f967-11e7-9493-5f6662f1ce70.JPG" width="400" height="500" />
+
+*Semantically, what Bayes rule does is it **incorporates** some evidence from the test into our **prior** to arrive at a **posterior**.
+ - Prior: Probability before running a test.
+ - test evidence
+ - Posterior: 
+<img src="https://user-images.githubusercontent.com/31917400/34955056-b8ae9834-fa1a-11e7-8ceb-a593ed75361a.jpg" />
+
+*Algorithm of Naive Bayes
+<img src="https://user-images.githubusercontent.com/31917400/34954589-e3b3d3c0-fa18-11e7-8141-08e522668276.jpg" />
+
+*Example_1. Text Forensic and Learning (ex. Whose email would it be ? Sent from Chris or Sara ?)
+<img src="https://user-images.githubusercontent.com/31917400/34954221-88772364-fa17-11e7-9f46-fb3d91d94be3.jpg" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------

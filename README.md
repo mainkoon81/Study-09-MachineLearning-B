@@ -216,9 +216,10 @@ import math
 
 -0.5*math.log(0.5, 2) -0.5*math.log(0.5, 2)
 ```
-Which is 1.
+Which is 1, so it's a fucked up entropy. 
 
  - DecisionTree tries to maximize the **Information Gain**
+ - 
 <img src="https://user-images.githubusercontent.com/31917400/38381197-f0b8b832-38fd-11e8-83da-db0be6a464ec.jpg" />  
 
 

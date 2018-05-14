@@ -219,6 +219,7 @@ import math
 Which is 1, so it's a fucked up entropy. 
 
  - DecisionTree tries to maximize the **Information Gain**
+ - First, look at the possible splits that **each column** gives, and caluculate "Information Gain" to pick the largest. 
  - 
 <img src="https://user-images.githubusercontent.com/31917400/40005096-1677691a-578f-11e8-8ef6-238d2b57f01d.jpg" />  
 <img src="https://user-images.githubusercontent.com/31917400/38381197-f0b8b832-38fd-11e8-83da-db0be6a464ec.jpg" />  

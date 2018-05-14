@@ -166,10 +166,10 @@ Unlike SVM using a kernel trick, **DecisionTree** use a trick that lets a linear
 import matplotlib.pyplot as plt
 import numpy as np
 import pylab as pl
-
 import sys
 from class_vis import prettyPicture, output_image
 from prep_terrain_data import makeTerrainData
+
 features_train, labels_train, features_test, labels_test = makeTerrainData()
 ```
 We build two DecisionTree classifiers; one with parameter(min_samples_split=2), and the other with (min_samples_split=50). What's the difference in accuracy ? And how to prevent **overfitting** ? 
@@ -218,7 +218,7 @@ import math
 ```
 Which is 1, so it's a fucked up entropy. 
 
-DecisionTree picked the maximum **Information Gain**
+Our DecisionTree picks splits of the maximum **Information Gain**
  - First, calculate "Parents Entropy".
  - Second, look at the possible splits that **each column** gives, and caluculate each "Child Entropy".
  - Third, calculate each column's "Information Gain" to pick the largest. 
@@ -226,15 +226,32 @@ DecisionTree picked the maximum **Information Gain**
 <img src="https://user-images.githubusercontent.com/31917400/38381197-f0b8b832-38fd-11e8-83da-db0be6a464ec.jpg" />  
 <img src="https://user-images.githubusercontent.com/31917400/40007308-50a9a350-5794-11e8-80be-ff1449721e92.jpg" />  
 
-## RandomForests
+### Hyperparameters for Decision Trees
+ - `max_depth`
+   - the largest length between the root to a leaf. A tree of maximum length k can have at most 2^k leaves(the very end).
+   - Of course, too large depth very often causes overfitting.
+ - `min_samples_leaf`(the very end)
+   - a minimum for the number of samples we allow on each individual leaf.
+   - This number can be specified as an integer, or as a float. If it's an integer, it's the number of minimum samples in the leaf. If it's a float, it'll be considered as the minimum percentage of samples on each leaf. For example, 0.1, or 10%, implies that a cut will not be allowed if in one of the leaves there is less than 10% of the samples on that node.
+   - Of course, too small minimum samples per leaf results in overfitting.
+ - `min_samples_split`
+   - This is the same as the minimum number of samples per leaf, but applied on **any split** of a node.
+ - `max_features`
+   - Oftentimes, we will have too many features to build a tree. To speed up? we limit the number of features that one looks for in each split. 
+<img src="https://user-images.githubusercontent.com/31917400/40022028-b2b645b0-57be-11e8-88e6-cde24608bbf4.jpg" />  
+ 
+## RandomForests >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 <img src="https://user-images.githubusercontent.com/31917400/40016638-daa76b40-57ae-11e8-8086-077ad0a9f8b4.jpg" />  
 
 What if we have so many columns? ---- Warning of Overfitting !!! How to solve ?
  - 1) Pick some of the columns randomly  
- - 2) Build a DecisionTree 
+ - 2) Build a DecisionTree in those columns
+ - 3) repeat 
+ - 4) Let the trees vote ! 
+   - When we have a new data-pt, let all the trees make a prediction and pick the one that appears the most. 
 
 
-
+## EnsembleMethods >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
 
 
 -------------------------------------------------------------------------------------------------------------------------------------

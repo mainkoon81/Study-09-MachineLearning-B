@@ -240,7 +240,7 @@ Our DecisionTree picks splits of the maximum **Information Gain**
    - Oftentimes, we will have too many features to build a tree. To speed up? we limit the number of features that one looks for in each split. 
 <img src="https://user-images.githubusercontent.com/31917400/40022028-b2b645b0-57be-11e8-88e6-cde24608bbf4.jpg" />  
  
-## RandomForests >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+## RandomForests >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 <img src="https://user-images.githubusercontent.com/31917400/40016638-daa76b40-57ae-11e8-8086-077ad0a9f8b4.jpg" />  
 
 What if we have so many columns? ---- Warning of Overfitting !!! How to solve ?
@@ -251,7 +251,7 @@ What if we have so many columns? ---- Warning of Overfitting !!! How to solve ?
    - When we have a new data-pt, let all the trees make a prediction and pick the one that appears the most. 
 
 
-## EnsembleMethods >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+## EnsembleMethods >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 -------------------------------------------------------------------------------------------------------------------------------------

@@ -152,7 +152,8 @@ fpr, tpr, _ = roc_curve(y_test, preds)
 df = pd.DataFrame(dict(fpr=fpr, tpr=tpr))
 ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
 ```
-
+--------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## (B) DecisionTree
  - For categoric data
 > PREDICTION: based on the features, we can guess the apps that the future users would download.  

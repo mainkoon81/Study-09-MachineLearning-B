@@ -154,8 +154,69 @@ ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
 ```
 
 ## (B) DecisionTree
- - 
+ - For categoric data
+> PREDICTION: based on the features, we can guess the apps that the future users would download.  
 
+Unlike SVM using a kernel trick, **DecisionTree** use a trick that lets a linear-DecisionSurf do Non-Linear-Decision making. 
+<img src="https://user-images.githubusercontent.com/31917400/38253495-b3ae81f2-374e-11e8-8721-1a2ab32bd310.jpg" /> 
+<img src="https://user-images.githubusercontent.com/31917400/39018803-08c158d6-441f-11e8-88f0-bc56f56d0df4.jpg" />  
+
+```
+import matplotlib.pyplot as plt
+import numpy as np
+import pylab as pl
+
+import sys
+from class_vis import prettyPicture, output_image
+from prep_terrain_data import makeTerrainData
+features_train, labels_train, features_test, labels_test = makeTerrainData()
+```
+We build two DecisionTree classifiers; one with parameter(min_samples_split=2), and the other with (min_samples_split=50). What's the difference in accuracy ? And how to prevent **overfitting** ? 
+
+<img src="https://user-images.githubusercontent.com/31917400/38373940-5d7c55fa-38ea-11e8-936f-7de3c3455e36.jpg" width="300" height="170" /> 
+
+Store your predictions in a list named 'pred_2', 'pred_50'.
+```
+from sklearn import tree
+
+clf_2 = tree.DecisionTreeClassifier(min_samples_split=2)
+clf_50 = tree.DecisionTreeClassifier(min_samples_split=50)
+
+X = features_train
+y = labels_train
+
+clf_2.fit(X, y)
+clf_50.fit(X, y)
+
+pred_2 = clf_2.predict(features_test)
+pred_50 = clf_50.predict(features_test)
+```
+Accuracy ? Whose accuracy is better ? clf_2 or clf_50 ? Well..min_samples_split=2 is too much..overfitting giving less accuracy.
+```
+from sklearn.metrics import accuracy_score
+
+acc_min_samples_split_2 = accuracy_score(pred_2, labels_test)
+acc_min_samples_split_50 = accuracy_score(pred_50, labels_test)
+
+def submitAccuracies():
+  return {"acc_min_samples_split_2":round(acc_min_samples_split_2, 3),
+          "acc_min_samples_split_50":round(acc_min_samples_split_50, 3)}
+```
+### DecisionTree & Entropy
+ - **Entropy:** is a measure of **[impurity]** in a bunch of examples...Let's say it's an opposite of purity..   
+ - **Entropy** controls how a DecisionTree decides **where to split the data** to make subsets as pure as possible...
+<img src="https://user-images.githubusercontent.com/31917400/38379058-77c82d46-38f7-11e8-97f3-4583e6b0255b.jpg" />  
+
+If we have a categorical veriable that consists of entry (a, b). Let's say p(a)=0.5, p(b)=0.5, then our entropy is
+```
+import math
+
+-0.5*math.log(0.5, 2) -0.5*math.log(0.5, 2)
+```
+Which is 1.
+
+ - DecisionTree tries to maximize the **Information Gain**
+<img src="https://user-images.githubusercontent.com/31917400/38381197-f0b8b832-38fd-11e8-83da-db0be6a464ec.jpg" />  
 
 
 

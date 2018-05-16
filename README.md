@@ -252,9 +252,17 @@ What if we have so many columns? ---- Warning of Overfitting !!! How to solve ?
 
 
 ## EnsembleMethods >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+ - Take a bunch of models and join them together to get a better model
+   - Bagging(Bootstrap Aggregating): Check each results and combine(average out or vote).
+   - Boosting: Try hard to exploit the strength of each models then combine.
+> Bagging
+ - weak learners: one node DecisionTree
+ - As our data is huge, we don't want to train many models on the same data. so we take randome subsets of the data and train a week learner on each one of these subsets. 
+ - Impose each result over the data and vote(as what two or more of them say..blue? it's blue.)
+<img src="https://user-images.githubusercontent.com/31917400/40124901-772598c0-5921-11e8-8d90-2b69198d4f6f.jpg" />  
 
-
-
+> Adaboost
+ - 
 
 
 

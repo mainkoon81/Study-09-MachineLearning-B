@@ -270,8 +270,6 @@ Take a bunch of models and join them together to get a better model
    - keep this going.
 <img src="https://user-images.githubusercontent.com/31917400/40181450-07049e36-59e1-11e8-8997-eae15598dccd.jpg" />  
    
- - How to combine ?
-   -  
 <img src="https://user-images.githubusercontent.com/31917400/40186492-23f685ca-59ed-11e8-9ae7-7e41a8300071.jpg" />  
 
 

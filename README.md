@@ -259,10 +259,11 @@ Take a bunch of models and join them together to get a better model
  - Impose each result over the data and vote(as what two or more of them say..blue? it's blue.)
 <img src="https://user-images.githubusercontent.com/31917400/40124901-772598c0-5921-11e8-8d90-2b69198d4f6f.jpg" />  
 
-> Adaboost
+> Adaboosting
  - First, fit our first weak learner in order to maximize accuracy(or equivalently minimize the size of errors): Do no better than **3 errors** ! When it comes to the errors, it makes them bigger(punish them). 
  - Our second learner needs to fix on the **mistakes** that the first one has made, correctly classifying these points at any expense, then punish the points misclassified by itself. 
  - Our third learner needs to fix on the **mistakes** that the second one has made, correctly classifying these points at any expense, then punish the points misclassified by itself....we can go on and on..but let's say 3 is enough and we combine these learners and make them vote. 
+ - OVERALL
 <img src="https://user-images.githubusercontent.com/31917400/40181441-03733f84-59e1-11e8-866d-a3d0261ca0e1.jpg" />  
  
  - DETAIL

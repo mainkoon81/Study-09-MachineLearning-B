@@ -264,7 +264,7 @@ Take a bunch of models and join them together to get a better model
  - Our second learner needs to fix on the **mistakes** that the first one has made, correctly classifying these points at any expense, then punish the points misclassified by itself. 
  - Our third learner needs to fix on the **mistakes** that the second one has made, correctly classifying these points at any expense, then punish the points misclassified by itself....we can go on and on..but let's say 3 is enough and we combine these learners. 
  - OVERALL
-<img src="https://user-images.githubusercontent.com/31917400/40181441-03733f84-59e1-11e8-866d-a3d0261ca0e1.jpg" />  
+<img src="https://user-images.githubusercontent.com/31917400/40187029-708b6a12-59ee-11e8-813c-c55513de5e9d.jpg" />  
  
  - DETAIL
    - Assign an initial weight of '1' and before fit our first learner, minimize the size of errors, then minimize the SUM of weights of these errors by changing the weights of errors to: `correct_sum/incorrect_sum`, which will make these two into the same SUM.

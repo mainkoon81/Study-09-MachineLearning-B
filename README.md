@@ -48,6 +48,7 @@ array([ 23.68420569])
 
 ## (A2) Linear Regression - Generalized_01 (Logistic: when 'y' follows Binomial Dist)
  - For categoric data
+ - For **binary** classification
 **[Find a DecisionSurface!]** 
 > PREDICTION: based on the line best cut the data, we can guess 'pass/fail' of new student.
  - The number of errors is not what we want to minimize.
@@ -157,6 +158,7 @@ ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## (B) DecisionTree
  - For categoric data
+ - For **non-binary** classification
 > PREDICTION: based on the features, we can guess the apps that the future users would download.  
 
 Unlike SVM using a kernel trick, **DecisionTree** use a trick that lets a linear-DecisionSurf do Non-Linear-Decision making. 

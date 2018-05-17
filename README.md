@@ -36,7 +36,8 @@ array([ 23.68420569])
 
 ### Regularization
  - Goal: Improve our model & Avoid overfitting.
- - Idea: Take the complexity of the model into account when we calculate the error. If we find a way to increment the error by some function of the `coefficients`, it would be great because in some way the complexity of our model will be added into the error so a complex model will have a larger error than a simple model. We respect that the simpler model have a tendency to generalize better.  
+ - Idea: Take the complexity of the model into account when we calculate the error. If we find a way to increment the error by some function of the `coefficients`, it would be great because in some way the complexity of our model will be added into the error so a complex model will have a larger error than a simple model. We respect that the simpler model have a tendency to generalize better.
+ - **L1 regularization** is useful for feature selection, as it tends to turn the less relevant weights into zero.
  - Question is...What if we punish the complicated model too little or punish it too much ? 
    - a model to send the rocket to the moon or a medical model have very **little room for error** so we're ok with some complexity.
    - a model to recommend potential friends have **more room for experimenting** and need to be simpler and faster to run on big data.

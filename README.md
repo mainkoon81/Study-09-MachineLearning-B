@@ -274,7 +274,19 @@ Take a bunch of models and join them together to get a better model
 <img src="https://user-images.githubusercontent.com/31917400/40187295-1aee25bc-59ef-11e8-8177-ad2da67d5c1f.jpg" />  
 <img src="https://user-images.githubusercontent.com/31917400/40186492-23f685ca-59ed-11e8-9ae7-7e41a8300071.jpg" />  
 
-
+```
+from sklearn.ensemble import AdaBoostClassifier
+model = AdaBoostClassifier()
+model.fit(x_train, y_train)
+model.predict(x_test)
+```
+When we define the model, we can specify the **hyperparameters**. In practice, the most common ones are:
+ - `base_estimator`: The model(Here, DecisonTree..) utilized for the weak learners 
+ - `n_estimators`: The maximum number of weak learners used.
+```
+from sklearn.tree import DecisionTreeClassifier
+model = AdaBoostClassifier(base_estimator = DecisionTreeClassifier(max_depth=2), n_estimators = 4)
+```
 
 --------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

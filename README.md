@@ -296,7 +296,7 @@ def NBAccuracy(features_train, labels_train, features_test, labels_test):
 It throws an accuracy of 88.4% which means 88.4% of the points are being correctly labelled by our classifier-'clf' when we use our test-set ! 
 
 >__Bayes Rule:__ 
-<img src="https://user-images.githubusercontent.com/31917400/34920230-5115b6b6-f967-11e7-9493-5f6662f1ce70.JPG" width="400" height="500" />
+<img src="https://user-images.githubusercontent.com/31917400/40175347-b6a12bbe-59cf-11e8-9d9c-57fa7bfccced.JPG" />
 
 *Semantically, what Bayes rule does is it **incorporates** some evidence from the test into our **prior** to arrive at a **posterior**.
  - Prior: Probability before running a test.

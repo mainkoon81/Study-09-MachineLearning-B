@@ -272,7 +272,7 @@ Take a bunch of models and join them together to get a better model
    
  - How to combine ?
    -  
-<img src="https://user-images.githubusercontent.com/31917400/40184077-3e421044-59e7-11e8-8e55-01ce1fd392cb.jpg" />  
+<img src="https://user-images.githubusercontent.com/31917400/40186492-23f685ca-59ed-11e8-9ae7-7e41a8300071.jpg" />  
 
 
 

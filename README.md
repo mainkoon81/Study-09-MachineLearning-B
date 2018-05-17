@@ -250,19 +250,20 @@ What if we have so many columns? ---- Warning of Overfitting !!! How to solve ?
  - 4) Let the trees vote ! 
    - When we have a new data-pt, let all the trees make a prediction and pick the one that appears the most. 
 
-
 ## EnsembleMethods >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
- - Take a bunch of models and join them together to get a better model
-   - Bagging(Bootstrap Aggregating): Check each results and combine(average out or vote).
-   - Boosting: Try hard to exploit the strength of each models then combine.
+Take a bunch of models and join them together to get a better model
+ - **Bagging**(Bootstrap Aggregating): Check each results and combine(average out or vote).
+ - **Boosting**: A bit more elaborated than Bagging. Try hard to exploit the strength of each models then combine.
 > Bagging
- - weak learners: one node DecisionTree
- - As our data is huge, we don't want to train many models on the same data. so we take randome subsets of the data and train a week learner on each one of these subsets. 
+ - As our data is huge, we don't want to train many models on the same data. so we take random subsets of the data and train a week learner(one node DecisionTree) on each one of these subsets. 
  - Impose each result over the data and vote(as what two or more of them say..blue? it's blue.)
 <img src="https://user-images.githubusercontent.com/31917400/40124901-772598c0-5921-11e8-8d90-2b69198d4f6f.jpg" />  
 
 > Adaboost
- - 
+ - First, fit our first weak learner in order to maximize accuracy(or equivalently minimize the size of errors): Do no better than **3 errors** ! When it comes to the errors, it makes them bigger(punish them). 
+ - Our second learner needs to fix on the **mistakes** that the first one has made, correctly classifying these points at any expense, then punish the points misclassified by itself. 
+ - Our third learner needs to fix on the **mistakes** that the second one has made, correctly classifying these points at any expense, then punish the points misclassified by itself....we can go on and on..but let's say 3 is enough and we combine these learners and make them vote. 
+ 
 
 
 

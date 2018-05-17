@@ -267,7 +267,7 @@ Take a bunch of models and join them together to get a better model
 <img src="https://user-images.githubusercontent.com/31917400/40187029-708b6a12-59ee-11e8-813c-c55513de5e9d.jpg" />  
  
  - DETAIL
-   - Assign an initial weight of '1' and before fit our first learner, minimize the size of errors, then minimize the SUM of weights of these errors by changing the weights of errors to: `correct_sum/incorrect_sum`, which will make these two into the same SUM.
+   - Assign an initial weight of '1' and before fit our first learner, minimize the size of errors, then minimize the SUM of weights of these errors by changing the weights of errors to: `correct_sum/incorrect_sum`, which will make these two correct, incorrect into the same SUM of the correct, incorrect. 
    - keep this going.
    - Here, notice `correct_sum/incorrect_sum` = `accuracy/(1-accuracy)` and we put it into `ln( )`, which is the final weight.
    - Our concern is whether the sums of these final-weights are `+ / -`. 

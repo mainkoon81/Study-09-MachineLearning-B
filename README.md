@@ -269,7 +269,7 @@ Take a bunch of models and join them together to get a better model
  - DETAIL
    - Assign an initial weight of '1' and before fit our first learner, minimize the size of errors, then minimize the SUM of weights of these errors by changing the weights of errors to: `correct_sum/incorrect_sum`, which will make these two into the same SUM.
    - keep this going.
-<img src="https://user-images.githubusercontent.com/31917400/40186517-326d792e-59ed-11e8-9576-2f20c1eebc19.jpg" />  
+<img src="https://user-images.githubusercontent.com/31917400/40187295-1aee25bc-59ef-11e8-8177-ad2da67d5c1f.jpg" />  
 <img src="https://user-images.githubusercontent.com/31917400/40186492-23f685ca-59ed-11e8-9ae7-7e41a8300071.jpg" />  
 
 

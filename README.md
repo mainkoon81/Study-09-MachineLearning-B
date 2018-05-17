@@ -296,6 +296,7 @@ model = AdaBoostClassifier(base_estimator = DecisionTreeClassifier(max_depth=2),
 
 <img src="https://user-images.githubusercontent.com/31917400/39019180-5566df3e-4420-11e8-9f87-dad95387ce6c.jpg" />
 
+ - Naive Bayes is an extension of the Bayes Theorem where we have more than one feature, with the assumption that each feature is independent of each other event..so Naive.
  - Library: sklearn.naive_bayes (Gaussian)
  - Example: Compute the accuracy of your Naive Bayes classifier. Accuracy is defined as the number of test points that are classified correctly divided by the total number of test points.
 ```

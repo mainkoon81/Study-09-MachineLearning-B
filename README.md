@@ -262,7 +262,7 @@ Take a bunch of models and join them together to get a better model
 > Adaboosting
  - First, fit our first weak learner in order to maximize accuracy(or equivalently minimize the size of errors): Do no better than **3 errors** ! When it comes to the errors, it makes them bigger(punish them). 
  - Our second learner needs to fix on the **mistakes** that the first one has made, correctly classifying these points at any expense, then punish the points misclassified by itself. 
- - Our third learner needs to fix on the **mistakes** that the second one has made, correctly classifying these points at any expense, then punish the points misclassified by itself....we can go on and on..but let's say 3 is enough and we combine these learners and make them vote. 
+ - Our third learner needs to fix on the **mistakes** that the second one has made, correctly classifying these points at any expense, then punish the points misclassified by itself....we can go on and on..but let's say 3 is enough and we combine these learners. 
  - OVERALL
 <img src="https://user-images.githubusercontent.com/31917400/40181441-03733f84-59e1-11e8-866d-a3d0261ca0e1.jpg" />  
  
@@ -270,7 +270,6 @@ Take a bunch of models and join them together to get a better model
    - Assign an initial weight of '1' and before fit our first learner, minimize the size of errors, then minimize the SUM of weights of these errors by changing the weights of errors to: `correct_sum/incorrect_sum`, which will make these two into the same SUM.
    - keep this going.
 <img src="https://user-images.githubusercontent.com/31917400/40186517-326d792e-59ed-11e8-9576-2f20c1eebc19.jpg" />  
-   
 <img src="https://user-images.githubusercontent.com/31917400/40186492-23f685ca-59ed-11e8-9ae7-7e41a8300071.jpg" />  
 
 

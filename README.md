@@ -49,7 +49,7 @@ array([ 23.68420569])
 ## (A2) Linear Regression - Generalized_01 (Logistic: when 'y' follows Binomial Dist)
  - For categoric data
  - For **binary** classification
-**[Find a DecisionSurface!]** 
+
 > PREDICTION: based on the line best cut the data, we can guess 'pass/fail' of new student.
  - The number of errors is not what we want to minimize.
  - Instead we want to minimize sth that captures the number of errors called 'Log-loss function'.
@@ -159,6 +159,7 @@ ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
 ## (B) DecisionTree
  - For categoric data
  - For **non-binary** classification
+ 
 > PREDICTION: based on the features, we can guess the apps that the future users would download.  
 
 Unlike SVM using a kernel trick, **DecisionTree** use a trick that lets a linear-DecisionSurf do Non-Linear-Decision making. 
@@ -295,8 +296,9 @@ model = AdaBoostClassifier(base_estimator = DecisionTreeClassifier(max_depth=2),
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## (C) Naive Bayes
  - For categoric data
+ - 
+ 
 > PREDICTION: when future emails come, we can combine these features to guess if they are spam or not. 
-
 <img src="https://user-images.githubusercontent.com/31917400/39019180-5566df3e-4420-11e8-9f87-dad95387ce6c.jpg" />
 
  - Naive Bayes is an extension of the Bayes Theorem where we have more than one feature, with the assumption that each feature is independent of each other event..so Naive.
@@ -372,6 +374,7 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
 -------------------------------------------------------------------------------------------------------------------------------------
 ## (E) Perceptron Algorithm for "Neural-Network"
  - For categoric data (Y/N)
+ - 
 <img src="https://user-images.githubusercontent.com/31917400/39047770-10482214-4493-11e8-8103-03c5425c0534.jpg" />   
  
  - Our model has 'input data-pt', 'weights', 'bias'

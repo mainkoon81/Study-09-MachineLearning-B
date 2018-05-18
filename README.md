@@ -328,7 +328,7 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
  - Prior: Probability before running a test.
  - test evidence
  - Posterior: 
-<img src="https://user-images.githubusercontent.com/31917400/40230476-805936b2-5a8f-11e8-9470-112ec2dbb0a1.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/40233114-a35e8b12-5a99-11e8-84ae-60f690a1fca6.jpg" />
 
 *Algorithm of Naive Bayes
 <img src="https://user-images.githubusercontent.com/31917400/40231554-75162b6c-5a93-11e8-9ce2-aec759b1c1fc.jpg" />

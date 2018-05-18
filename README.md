@@ -333,8 +333,8 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
 *Algorithm of Naive Bayes
 <img src="https://user-images.githubusercontent.com/31917400/40231554-75162b6c-5a93-11e8-9ce2-aec759b1c1fc.jpg" />
 
-*Example_1. Text Forensic and Learning (ex. Whose email would it be ? Sent from Chris or Sara ?)
-<img src="https://user-images.githubusercontent.com/31917400/34954221-88772364-fa17-11e7-9f46-fb3d91d94be3.jpg" />
+### Example: Text Forensic and Learning (ex. Whose email would it be ?)
+<img src="https://user-images.githubusercontent.com/31917400/40237824-6cba9ece-5aa9-11e8-8468-16d3c0fdf0db.jpg" />
 
 
 

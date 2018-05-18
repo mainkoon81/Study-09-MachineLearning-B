@@ -336,7 +336,7 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
 ### Example: Text Forensic and Learning (ex. Whose email would it be ?)
 <img src="https://user-images.githubusercontent.com/31917400/40242300-345d0664-5ab5-11e8-9a71-0daeb1a14317.jpg" />
 
-### Multiple evidences
+### Multiple Evidences(test results)
 <img src="https://user-images.githubusercontent.com/31917400/40252513-6d9f46ac-5ad4-11e8-851b-5b7dd493f8df.jpg" />
 
 

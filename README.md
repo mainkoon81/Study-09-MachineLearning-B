@@ -442,19 +442,19 @@ Introducing New Features 'Z' or 'transformed X or Y' causes 'hyperplane.' Z is n
 Introducing poly tool box. Select terms to create the decision surf.
 <img src="https://user-images.githubusercontent.com/31917400/40273507-fc70f328-5bb8-11e8-948c-4b087934f4d9.jpg" />  
 
-**Kernel Trick:** There are functions taking a low dimensional given 'input space' and the added 'feature space' then map it to a very high dimensional space - Kernel function (Linear, rbf, poly, sigmoid). It makes the separation then takes the solution and go back to the original space. It sets the dataset apart where the division line is non-linear.
+**Kernel Trick:** There are functions taking a low dimensional given 'input space' and the added 'feature space' then map it to a very high dimensional space - Kernel function (Linear, poly, rbf, sigmoid). It makes the separation then takes the solution and go back to the original space. It sets the dataset apart where the division line is non-linear.
 <img src="https://user-images.githubusercontent.com/31917400/35122799-e8106e2a-fc97-11e7-8872-43e13edacfd9.jpg" width="500" height="100" />
 
 rbf (radial basis func) kernel: 
  - hill & valley
  - find a place where a line intersecting the mountain range and project every pt down, then we have a boundary given by the vertical cut. But how we build the mountain range and how to locate red pt in highlands and blue pt in lowlands ?  
 
-parameters (Gamma / C)
- - C: The 'gamma' parameter actually has no effect on the 'linear' kernel for SVMs. The key parameter for 'linear kernel function' is "C". The C parameter **trades off misclassification of training examples against simplicity of the decision surface**. A low C makes the decision surface smooth, while a high C aims at classifying all training examples correctly by giving the model freedom to select more samples as support vectors - wiggling around individual data pt...
+parameters (degree, C, Gamma)
+ - **C:** The 'gamma' parameter actually has no effect on the 'linear' kernel for SVMs. The key parameter for 'linear kernel function' is "C". The C parameter **trades off misclassification of training examples against simplicity of the decision surface**. A low C makes the decision surface smooth, while a high C aims at classifying all training examples correctly by giving the model freedom to select more samples as support vectors - wiggling around individual data pt...
  - C is a constant that attaches itself to the classification error. If we have large C, then the error is mostly the classification error so we focus more on correctly classifying all the points than in finding a good margin. When C is small, the error is mostly a margin error. 
 <img src="https://user-images.githubusercontent.com/31917400/40270444-832ce66c-5b85-11e8-8512-21274e8a962c.jpg" />
 
- - Gamma: This parameter defines **how far the influence of a single data pt reaches**, with low values (widey mountain) meaning ‘far’ and high values (pointy mountain) meaning ‘close’. The gamma parameters can be seen as the inverse of the radius of influence of samples selected by the model as support vectors. High gamma just like me..only thinking of sth right in my face. 
+ - **Gamma:** This parameter in **rbf** defines **how far the influence of a single data pt reaches**, with low values (widey mountain) meaning ‘far’ and high values (pointy mountain) meaning ‘close’. The gamma parameters can be seen as the inverse of the radius of influence of samples selected by the model as support vectors. High gamma just like me..only thinking of sth right in my face. 
  - When gamma is very small, the model is too constrained and cannot capture the complexity or “shape” of the data. The region of influence of any selected support vector would include the whole training set. The resulting model will behave similarly to a linear model with a set of hyperplanes that separate the centers of high density of any pair of two classes. If gamma is too large, the radius of the area of influence of the support vectors only includes the support vector itself and no amount of regularization with C will be able to prevent overfitting. 
 <img src="https://user-images.githubusercontent.com/31917400/35127560-923ca17c-fcaa-11e7-81ca-e4db864ccc96.jpg" />  
 

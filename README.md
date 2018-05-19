@@ -449,8 +449,11 @@ Overall parameters (Kernel / Gamma / C)
 <img src="https://user-images.githubusercontent.com/31917400/35127560-923ca17c-fcaa-11e7-81ca-e4db864ccc96.jpg" />  
 
 DETAIL of kernel (linear, poly, rbf)
- - 'C': 
+ - 'C': It's a constant that attaches itself to the classification error.
+   - if we have large C, then the error is mostly the classification error so we focus more on correctly classifying all the points than in finding a good margin. When C is small, the error is mostly a margin error. 
+<img src="https://user-images.githubusercontent.com/31917400/40270444-832ce66c-5b85-11e8-8512-21274e8a962c.jpg" />  
 
+ - 'poly': 
 
 
 

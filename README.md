@@ -437,7 +437,10 @@ def submitAccuracy():
 <img src="https://user-images.githubusercontent.com/31917400/39048647-2962d1ba-4496-11e8-82ee-b87365d27b07.jpg" />  
 
 Introducing New Features 'Z' or 'transformed X or Y' causes 'hyperplane.' Z is non-negative because it's a distance from the origin. 
-<img src="https://user-images.githubusercontent.com/31917400/35122461-b94d14f4-fc96-11e7-9e22-1e3a76e58e16.jpg" /> 
+<img src="https://user-images.githubusercontent.com/31917400/35122461-b94d14f4-fc96-11e7-9e22-1e3a76e58e16.jpg" />
+
+Introducing tool poly-toolbox
+<img src="https://user-images.githubusercontent.com/31917400/40273507-fc70f328-5bb8-11e8-948c-4b087934f4d9.jpg" />  
 
 **Kernel Trick:** There are functions taking a low dimensional given 'input space' and the added 'feature space' then map it to a very high dimensional space - Kernel function (Linear, rbf, poly, sigmoid). It makes the separation then takes the solution and go back to the original space. It sets the dataset apart where the division line is non-linear.
 <img src="https://user-images.githubusercontent.com/31917400/35122799-e8106e2a-fc97-11e7-8872-43e13edacfd9.jpg" width="500" height="100" />
@@ -453,7 +456,6 @@ parameters (Gamma / C)
 
 DETAIL of kernel (linear, poly, rbf)
  - poly
-<img src="https://user-images.githubusercontent.com/31917400/40273507-fc70f328-5bb8-11e8-948c-4b087934f4d9.jpg" />  
 
  - rbf
  

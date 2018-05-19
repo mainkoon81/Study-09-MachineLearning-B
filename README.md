@@ -439,11 +439,15 @@ def submitAccuracy():
 Introducing New Features 'Z' or 'transformed X or Y' causes 'hyperplane.' Z is non-negative because it's a distance from the origin. 
 <img src="https://user-images.githubusercontent.com/31917400/35122461-b94d14f4-fc96-11e7-9e22-1e3a76e58e16.jpg" />
 
-Introducing tool poly-toolbox
+Introducing poly tool box. Select terms to create the decision surf.
 <img src="https://user-images.githubusercontent.com/31917400/40273507-fc70f328-5bb8-11e8-948c-4b087934f4d9.jpg" />  
 
 **Kernel Trick:** There are functions taking a low dimensional given 'input space' and the added 'feature space' then map it to a very high dimensional space - Kernel function (Linear, rbf, poly, sigmoid). It makes the separation then takes the solution and go back to the original space. It sets the dataset apart where the division line is non-linear.
 <img src="https://user-images.githubusercontent.com/31917400/35122799-e8106e2a-fc97-11e7-8872-43e13edacfd9.jpg" width="500" height="100" />
+
+rbf: 
+
+
 
 parameters (Gamma / C)
  - C: The 'gamma' parameter actually has no effect on the 'linear' kernel for SVMs. The key parameter for 'linear kernel function' is "C". The C parameter **trades off misclassification of training examples against simplicity of the decision surface**. A low C makes the decision surface smooth, while a high C aims at classifying all training examples correctly by giving the model freedom to select more samples as support vectors - wiggling around individual data pt...
@@ -453,30 +457,6 @@ parameters (Gamma / C)
  - Gamma: This parameter defines **how far the influence of a single data pt reaches**, with low values meaning ‘far’ and high values meaning ‘close’. The gamma parameters can be seen as the inverse of the radius of influence of samples selected by the model as support vectors. High gamma just like me..only thinking of sth right in my face. 
  - When gamma is very small, the model is too constrained and cannot capture the complexity or “shape” of the data. The region of influence of any selected support vector would include the whole training set. The resulting model will behave similarly to a linear model with a set of hyperplanes that separate the centers of high density of any pair of two classes. If gamma is too large, the radius of the area of influence of the support vectors only includes the support vector itself and no amount of regularization with C will be able to prevent overfitting. 
 <img src="https://user-images.githubusercontent.com/31917400/35127560-923ca17c-fcaa-11e7-81ca-e4db864ccc96.jpg" />  
-
-DETAIL of kernel (linear, poly, rbf)
- - poly
-
- - rbf
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 -------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------

@@ -433,7 +433,7 @@ acc = accuracy_score(pred, labels_test)
 def submitAccuracy():
     return acc
 ```
-### Non-Linear SVM
+## Non-Linear SVM
 <img src="https://user-images.githubusercontent.com/31917400/39048647-2962d1ba-4496-11e8-82ee-b87365d27b07.jpg" />  
 
 Introducing New Features 'Z' or 'transformed X or Y' causes 'hyperplane.' Z is non-negative because it's a distance from the origin. 

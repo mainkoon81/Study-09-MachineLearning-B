@@ -373,7 +373,7 @@ SVM is a set of supervised learning methods used for
  - **outliers detection**
 SVMs "doesn't work well with lots and lots of noise, so when the classes are very overlapping, you have to count independent evidence.
 
-In SVM, tuning the parameters can be a lot of work, but GridCV, a great sklearn tool that can find an optimal parameter tune almost automatically.
+### In SVM, tuning the parameters can be a lot of work, but GridCV, a great sklearn tool that can find an optimal parameter tune almost automatically.
 
 Naive Bayes is great for 'text'. It’s faster and generally gives better performance than an SVM. Of course, there are plenty of other problems where an SVM might work better. Knowing which one to try when you’re tackling a problem for the first time is part of the art of ML. 
 

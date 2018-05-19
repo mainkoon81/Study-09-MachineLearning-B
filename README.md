@@ -418,7 +418,10 @@ In sklearn.svm, `SVC()`, `NuSVC()`, `LinearSVC()` accept slightly different sets
  - Example: 
 ```
 from sklearn.svm import SVC
-clf = SVC(kernel="linear")
+# clf = SVC(kernel="linear") #
+# clf = SVC(kernel='poly', degree=4, C=0.1) #
+# clf = SVC(kernel='rbf', gamma= ) #
+
 X = features_train
 y = labels_train
 clf.fit(X, y)

@@ -162,7 +162,8 @@ ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
  
 > PREDICTION: based on the features, we can guess the apps that the future users would download.  
 
-Unlike SVM using a kernel trick, **DecisionTree** use a trick that lets a linear-DecisionSurf do Non-Linear-Decision making. 
+ - Unlike SVM using a kernel trick, **DecisionTree** use a trick that lets a linear-DecisionSurf do Non-Linear-Decision making.
+ - When making Decision Trees, we ask questions: On what features do we make our decisions on? What is the threshold for classifying each question into a yes or no answer? By adding an additional question, we can greater define the Yes and No classes ! 
 <img src="https://user-images.githubusercontent.com/31917400/38253495-b3ae81f2-374e-11e8-8721-1a2ab32bd310.jpg" /> 
 <img src="https://user-images.githubusercontent.com/31917400/39018803-08c158d6-441f-11e8-88f0-bc56f56d0df4.jpg" />  
 

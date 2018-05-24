@@ -364,8 +364,8 @@ Usually they have words like 'free', 'win', 'winner', 'cash', 'prize' and the li
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## (D) Support Vector Machine
  - For categoric data
- - 
-> PREDICTION: 
+ - For numeric data
+> PREDICTION: face detection, handwriting recognition, time series, stock value prediction
 <img src="https://user-images.githubusercontent.com/31917400/39476600-673208d2-4d54-11e8-8f73-18871433f89c.jpg" />
 
 SVM is a set of supervised learning methods used for 

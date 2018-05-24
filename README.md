@@ -374,6 +374,12 @@ SVM is a set of supervised learning methods used for
  - **outliers detection**
 SVMs "doesn't work well with lots and lots of noise, so when the classes are very overlapping, you have to count independent evidence.
 
+It is not a probabilistic model; i.e., it does not postulate a probability distribution and thus does not assume any randomness. It merely tries to draw a simple line(or plane or hyperplane in higher dimensions) to separate the data points into two parts. That's all. Note that the dataset contains labeled data.
+
+One difficulty was that oftentimes the classifier(the separating 'line' or 'hyperplane') cannot be defined linearly, which means it's not actually a straight line or plane that separates the two sets. It should rather be a wavy curve or surface. So what do we do? We lift the feature space to a higher or possibly an infinite dimensional space so that a linear classifier is possible. This is called the kernel trick. This is what the support vector machine does.
+
+Now applying this to a regression problem, linear regression could be described as an attempt to draw a line (or similarly plane or hyperplane in higher dimensions) that minimizes the error(or the loss function). Therefore, if we choose different loss functions, the regression line(or plane, hyperplane) changes. When the feature space seemingly isn't best served by a simple line or plane but rather calls for something wavy as seen in the classification problem, instead of approximating the wavy object, we again use the kernel trick to lift the feature space into a higher dimension. In this task, the output is a real value.
+
 ### In SVM, tuning the parameters can be a lot of work, but GridCV, a great sklearn tool that can find an optimal parameter tune almost automatically.
 
 Naive Bayes is great for 'text'. It’s faster and generally gives better performance than an SVM. Of course, there are plenty of other problems where an SVM might work better. Knowing which one to try when you’re tackling a problem for the first time is part of the art of ML. 

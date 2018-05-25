@@ -49,6 +49,7 @@ array([ 23.68420569])
 ## (A2) Linear Regression - Generalized_01 (Logistic: when 'y' follows Binomial Dist)
  - For categoric data
  - For **binary** classification
+ - The dependent variable must be categorical, and the explanatory variables can take any form. 
 
 > PREDICTION: based on the line best cut the data, we can guess 'pass/fail' of new student.
  - The number of errors is not what we want to minimize.

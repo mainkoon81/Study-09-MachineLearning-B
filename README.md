@@ -486,7 +486,7 @@ parameters (degree, C, Gamma)
  
 ### Perceptron
  - Perceptron refers a combination of nodes (here, Linear_function_Node + Step_function_Node)
- - Perceptron can be a logical operator: AND, OR, NOT, XOR. They can be represented as perceptrons.
+ - Application example: Perceptron can be a logical operator: AND, OR, NOT, XOR...
    - Take two inputs then returns an output.
 <img src="https://user-images.githubusercontent.com/31917400/39961806-b1513700-5635-11e8-9edf-f3cde879577c.jpg" />
 

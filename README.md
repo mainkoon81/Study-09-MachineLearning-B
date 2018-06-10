@@ -594,7 +594,7 @@ This function runs the perceptron algorithm repeatedly on the dataset, and retur
  - 'boundary_lines' are the solution lines that get plotted below.
  - In each epoch, we apply the perceptron step.
 <img src="https://user-images.githubusercontent.com/31917400/41202123-c0a19c0c-6cbc-11e8-94e2-76d73f9a297b.jpg" />
-<img src="https://user-images.githubusercontent.com/31917400/41205239-7f5f0970-6ce7-11e8-9ced-860dc323812b.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41205313-1c04212e-6ce9-11e8-8b1d-c9bf69912d72.jpg" />
 
 ```
 def trainPerceptronAlgorithm(X, y, learn_rate = 0.01, num_epochs = 25):

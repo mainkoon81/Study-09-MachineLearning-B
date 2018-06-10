@@ -619,6 +619,9 @@ def trainPerceptronAlgorithm(X, y, learn_rate = 0.01, num_epochs = 25):
 > Move from the discrete to the continuous!
 <img src="https://user-images.githubusercontent.com/31917400/41206423-b5992a52-6cfb-11e8-911f-b406ac6c3f5a.jpg" />
 
+ - Two perceptron
+   - the change in activation function(from Step to Sigmoid). Instead of returning 0/1, the new percaptron offer each probability!
+<img src="https://user-images.githubusercontent.com/31917400/41206510-138f1800-6cfd-11e8-8cec-63a6233c6ff0.jpg" />
 
 
 

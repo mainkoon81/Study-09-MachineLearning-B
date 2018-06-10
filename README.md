@@ -580,12 +580,12 @@ def perceptronStep(X, y, W, b, learn_rate = 0.01):
     for i in range(len(X)):
         y_hat = prediction(X[i],W,b) ## it's | ---
         if y[i]-y_hat == 1:  ## FalseNegative
-            W[0] += X[i][0]*learn_rate
-            W[1] += X[i][1]*learn_rate
+            W[0] += learn_rate*X[i][0]
+            W[1] += learn_rate*X[i][1]
             b += learn_rate
         elif y[i]-y_hat == -1:  ## FalsePositive
-            W[0] -= X[i][0]*learn_rate
-            W[1] -= X[i][1]*learn_rate
+            W[0] -= learn_rate*X[i][0]
+            W[1] -= learn_rate*X[i][1]
             b -= learn_rate
     return W, b
 ```

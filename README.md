@@ -617,6 +617,7 @@ def trainPerceptronAlgorithm(X, y, learn_rate = 0.01, num_epochs = 25):
 <img src="https://user-images.githubusercontent.com/31917400/41206106-c62ad73a-6cf6-11e8-8307-d38aeda8113a.jpg" />
 
 > Move from the discrete to the continuous!
+<img src="https://user-images.githubusercontent.com/31917400/41206423-b5992a52-6cfb-11e8-911f-b406ac6c3f5a.jpg" />
 
 
 

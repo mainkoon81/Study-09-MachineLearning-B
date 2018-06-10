@@ -611,9 +611,12 @@ def trainPerceptronAlgorithm(X, y, learn_rate = 0.01, num_epochs = 25):
 <img src="https://user-images.githubusercontent.com/31917400/39966015-6f875a4a-569c-11e8-804d-1b2452f3de83.jpg" />
 
 ### Non-Linear DecisionSurf
+**Error-Function**(Gradient_Descent Method): it tells us how far we are from the solution(it's a distance).
+ - It should be continuous!
+ - It should be differentiable! (just like minimizing SSE in linear model.)
+<img src="https://user-images.githubusercontent.com/31917400/41206106-c62ad73a-6cf6-11e8-8307-d38aeda8113a.jpg" />
 
-
-
+> Move from the discrete to the continuous!
 
 
 

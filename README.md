@@ -578,7 +578,7 @@ Update W, b, according to the perceptron algorithm, and return W and b.
 ```
 def perceptronStep(X, y, W, b, learn_rate = 0.01):
     for i in range(len(X)):
-        y_hat = prediction(X[i],W,b)
+        y_hat = prediction(X[i],W,b) ## it's | ---
         if y[i]-y_hat == 1:
             W[0] += X[i][0]*learn_rate
             W[1] += X[i][1]*learn_rate

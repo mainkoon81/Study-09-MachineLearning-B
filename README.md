@@ -541,7 +541,7 @@ weight2 = -2.0
 bias = 1.0
 ```
 4) **XOR** Multi-Layer Perceptron(cross-OR ?)
- - What if we cannot build the decision surface ?
+ - [**What if it's impossible to build the decision surface ?**]
    - Combine perceptions: "the output of one = the input of another one"...'Neural Network'
 <img src="https://user-images.githubusercontent.com/31917400/39961747-d552235e-5634-11e8-99ce-aed8a2aae548.jpg" />
 
@@ -608,6 +608,8 @@ def trainPerceptronAlgorithm(X, y, learn_rate = 0.01, num_epochs = 25):
     return boundary_lines
 ```
 <img src="https://user-images.githubusercontent.com/31917400/39966015-6f875a4a-569c-11e8-804d-1b2452f3de83.jpg" />
+
+### Non-Linear DecisionSurf
 
 
 

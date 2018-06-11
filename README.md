@@ -660,14 +660,17 @@ Want to calculate **probability the four points are of the colors** that they **
  - So how to maximize the probability? 
  - So how to minimize the Error-Function? 
  - Can we obtain an error-Function from the probability? Maximized probability can yield the minimised Error-Function?
- - What if the number of datapoints are astronomical? Then producting is not a good idea. We need a log-function that turns products into sums...and remember..when input is ranged from 0 to 1, the logarithm gives negative. 
+ - What if the number of datapoints are astronomical? Then producting is not a good idea. We need a log-function that turns products into sums...and remember..when input is ranged from 0 to 1, the logarithm gives negative. And this is the Entropy function. 
 
 **4. Cross-Entropy**
 
-A good model gives a low cross-entropy and a bad model gives a high cross-entropy. So our goal has changed: 
- - **'Minimize the cross Entropy!'**
+If I have a bunch of events and probabilities, how likely is it that those events happen based on the probabilities. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 
+ - A good model gives a low cross-entropy and a bad model gives a high cross-entropy. So our goal has changed: 
+   - **Minimize the Cross Entropy!**
 <img src="https://user-images.githubusercontent.com/31917400/41236233-86a74a52-6d88-11e8-801e-6eeccc2afdec.jpg" />
  
+ - Cross Entropy is a connection between probabilities and error functions.
+
 
 
 

@@ -670,8 +670,15 @@ If I have a bunch of events and probabilities, Cross-Entropy says **how likely t
 <img src="https://user-images.githubusercontent.com/31917400/41236233-86a74a52-6d88-11e8-801e-6eeccc2afdec.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/41238775-acc5f0b6-6d8e-11e8-882a-22c402206915.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/41238777-af71af9e-6d8e-11e8-98d6-6db510dc2570.jpg" />
+```
+def cross_entropy(Y, P):
+    Y = np.float_(Y)
+    P = np.float_(P)
+    return(-np.sum(Y*np.log(P) + (1-Y)*np.log(1-P)))
+```
+ - Cross Entropy is a connection between probabilities and error functions???
 
- - Cross Entropy is a connection between probabilities and error functions.
+ - 
 
 
 

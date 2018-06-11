@@ -668,7 +668,7 @@ If I have a bunch of events and probabilities, Cross-Entropy says **how likely t
  - A good model gives a low cross-entropy and a bad model gives a high cross-entropy. So our goal has changed: 
    - **Minimize the Cross Entropy!**
 <img src="https://user-images.githubusercontent.com/31917400/41236233-86a74a52-6d88-11e8-801e-6eeccc2afdec.jpg" />
-<img src="https://user-images.githubusercontent.com/31917400/41257902-6264276c-6dc6-11e8-9c18-11cf97b25fae.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41258451-180b7c72-6dc8-11e8-99d9-cacdb4f6efa6.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/41257907-646ae5c8-6dc6-11e8-92dd-1d48aec822a6.jpg" />
 
 ```

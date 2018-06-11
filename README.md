@@ -664,12 +664,15 @@ Want to calculate **probability the four points are of the colors** that they **
 
 **4. Cross-Entropy**
 
-If I have a bunch of events and probabilities, how likely is it that those events happen based on the probabilities. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 
+If I have a bunch of events and probabilities, Cross-Entropy says **how likely those events happen based on the probabilities**. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 
  - A good model gives a low cross-entropy and a bad model gives a high cross-entropy. So our goal has changed: 
    - **Minimize the Cross Entropy!**
 <img src="https://user-images.githubusercontent.com/31917400/41236233-86a74a52-6d88-11e8-801e-6eeccc2afdec.jpg" />
- 
+<img src="https://user-images.githubusercontent.com/31917400/41238775-acc5f0b6-6d8e-11e8-882a-22c402206915.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41238777-af71af9e-6d8e-11e8-98d6-6db510dc2570.jpg" />
+
  - Cross Entropy is a connection between probabilities and error functions.
+
 
 
 

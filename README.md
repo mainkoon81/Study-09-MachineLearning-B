@@ -667,9 +667,9 @@ Want to calculate **probability the four points are of the colors** that they **
 If I have a bunch of events and probabilities, Cross-Entropy says **how likely those events happen based on the probabilities**. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 
  - A good model gives a low cross-entropy and a bad model gives a high cross-entropy. So our goal has changed: 
    - **Minimize the Cross Entropy!**
-<img src="https://user-images.githubusercontent.com/31917400/41236233-86a74a52-6d88-11e8-801e-6eeccc2afdec.jpg" />
-<img src="https://user-images.githubusercontent.com/31917400/41238775-acc5f0b6-6d8e-11e8-882a-22c402206915.jpg" />
-<img src="https://user-images.githubusercontent.com/31917400/41257456-cfdfa07a-6dc4-11e8-88e0-10414c7af253.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41233369-28e09cd6-6d81-11e8-947d-11ba772b9e33.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41257902-6264276c-6dc6-11e8-9c18-11cf97b25fae.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41257907-646ae5c8-6dc6-11e8-92dd-1d48aec822a6.jpg" />
 
 ```
 def cross_entropy(Y, P):

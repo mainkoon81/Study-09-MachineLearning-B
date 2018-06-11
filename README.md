@@ -677,7 +677,7 @@ def cross_entropy(Y, P):
     P = np.float_(P)
     return(-np.sum(Y*np.log(P) + (1-Y)*np.log(1-P)))
 ```
-<img src="https://user-images.githubusercontent.com/31917400/41240839-60ab7886-6d93-11e8-96fa-7cc4a3efd6a7.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41241502-006d4a92-6d95-11e8-9a9e-bed37efbbccd.jpg" />
 
 > **Multiclass Cross-Entropy**
  - 

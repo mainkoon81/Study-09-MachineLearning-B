@@ -680,7 +680,7 @@ def cross_entropy(Y, P):
 <img src="https://user-images.githubusercontent.com/31917400/41241502-006d4a92-6d95-11e8-9a9e-bed37efbbccd.jpg" />
 
 > **Multiclass Cross-Entropy**
-<img src="https://user-images.githubusercontent.com/31917400/41257462-d39199ee-6dc4-11e8-86f6-c3b53cc27123.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41258337-a968f5a6-6dc7-11e8-885e-6e6bef775c1d.jpg" />
 
 
 

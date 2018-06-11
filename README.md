@@ -669,7 +669,7 @@ If I have a bunch of events and probabilities, Cross-Entropy says **how likely t
    - **Minimize the Cross Entropy!**
 <img src="https://user-images.githubusercontent.com/31917400/41236233-86a74a52-6d88-11e8-801e-6eeccc2afdec.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/41238775-acc5f0b6-6d8e-11e8-882a-22c402206915.jpg" />
-<img src="https://user-images.githubusercontent.com/31917400/41241092-0704d7cc-6d94-11e8-9736-af49cab943da.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41257456-cfdfa07a-6dc4-11e8-88e0-10414c7af253.jpg" />
 
 ```
 def cross_entropy(Y, P):
@@ -677,7 +677,7 @@ def cross_entropy(Y, P):
     P = np.float_(P)
     return(-np.sum(Y*np.log(P) + (1-Y)*np.log(1-P)))
 ```
-<img src="https://user-images.githubusercontent.com/31917400/41238775-acc5f0b6-6d8e-11e8-882a-22c402206915.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41241502-006d4a92-6d95-11e8-9a9e-bed37efbbccd.jpg" />
 
 > **Multiclass Cross-Entropy**
 <img src="https://user-images.githubusercontent.com/31917400/41257462-d39199ee-6dc4-11e8-86f6-c3b53cc27123.jpg" />

@@ -626,8 +626,26 @@ Two perceptrons
 <img src="https://user-images.githubusercontent.com/31917400/41206510-138f1800-6cfd-11e8-8cec-63a6233c6ff0.jpg" />
 
 ### Concept_02. Multi-class Classification
-when the problem has 3 or more classes ? How to turn all scores into probabilities? 
+When the problem has 3 or more classes ? How to turn all scores(WX+b, which is a linear function) into probabilities?(of course, Sigmoid)
+ - Note that scores often can be negative, and we need to calculate probability. See 'exp() of Sigmoid' can turn them into positive. 
 > **Softmax Function**
+<img src="https://user-images.githubusercontent.com/31917400/41224711-06ad2c7c-6d65-11e8-8264-0f966ac381b3.jpg" />
+
+Takes as input a list of numbers, and returns the list of values given by the softmax function.
+```
+def softmax(L):
+    expL = np.exp(L)
+    S_expL = sum(expL)
+    result=[]
+    for i in expL:
+        result.append(i/S_expL)
+    return(result)
+    
+def softmax(L):
+    expL = np.exp(L)
+    return(np.divide(expL, sum(expL)))    
+```
+ - Let's say we have 'n' classes and our linear model(WX+b) gives us the score: Z_1...Z_n, each score for each class. When we turn them into probabilities,     
 
 
 

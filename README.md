@@ -653,6 +653,9 @@ What if some input data is not numerical?
 <img src="https://user-images.githubusercontent.com/31917400/41227645-7153369a-6d6d-11e8-9e91-5b637e992979.jpg" />
 
 **3. MaximumLikelihood** to improve our model
+Want to calculate **probability the four points are of the colors** that they actually are. We assume the colors of the points are independent events, then the probability for the **whole arrangement** is the product of the probabilities of the four points. If the model is given by these probability spaces, then the **probability that the points are of this colors** is this.
+<img src="https://user-images.githubusercontent.com/31917400/41233369-28e09cd6-6d81-11e8-947d-11ba772b9e33.jpg" />
+
 
 
 

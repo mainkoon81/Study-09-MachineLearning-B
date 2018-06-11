@@ -626,7 +626,9 @@ Two perceptrons
 <img src="https://user-images.githubusercontent.com/31917400/41206510-138f1800-6cfd-11e8-8cec-63a6233c6ff0.jpg" />
 
 ### Concept_02. Multi-class Classification
+
 **1. Softmax Function**
+
 When the problem has 3 or more classes ? How to turn all scores(WX+b, which is a linear function) into probabilities?(of course, Sigmoid)
  - Note that scores often can be negative, and we need to calculate probability. See 'exp() of Sigmoid' can turn them into positive. 
 <img src="https://user-images.githubusercontent.com/31917400/41224711-06ad2c7c-6d65-11e8-8264-0f966ac381b3.jpg" />
@@ -646,8 +648,11 @@ def softmax(L):
     return(np.divide(expL, sum(expL)))    
 ```
 **2. One hot encoding**
+
 What if some input data is not numerical?   
 <img src="https://user-images.githubusercontent.com/31917400/41227645-7153369a-6d6d-11e8-9e91-5b637e992979.jpg" />
+
+**3. MaximumLikelihood** to improve our model
 
 
 

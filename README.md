@@ -666,7 +666,7 @@ Want to calculate **probability the four points are of the colors** that they **
 
 A good model gives a low cross-entropy and a bad model gives a high cross-entropy. So our goal has changed: 
  - **'Minimize the cross Entropy!'**
-<img src="https://user-images.githubusercontent.com/31917400/41233369-28e09cd6-6d81-11e8-947d-11ba772b9e33.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41236233-86a74a52-6d88-11e8-801e-6eeccc2afdec.jpg" />
  
 
 

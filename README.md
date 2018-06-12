@@ -682,7 +682,10 @@ def cross_entropy(Y, P):
 > **Multiclass Cross-Entropy**
 <img src="https://user-images.githubusercontent.com/31917400/41258337-a968f5a6-6dc7-11e8-885e-6e6bef775c1d.jpg" />
 
-### Cross Entropy is a connection between probabilities and error functions???
+### Cross Entropy is a connection between probabilities and error functions
+ - Error = each element of Cross Entropy `-ln(P(pos))` or `-ln(1-P(pos))`
+<img src="https://user-images.githubusercontent.com/31917400/41286884-e0cec694-6e38-11e8-9d20-84b8530c0594.jpg" />
+ 
 
 ### Concept_03. Logistic_Regression algorithm
 
@@ -691,7 +694,8 @@ This is the building block of all that constitutes Deep Learning.
  - Pick a random model
  - Calculate the error
  - Minimize the error, and obtain a better model
-Then how to calculate the Error Function?
+ 
+> Then how to calculate the **Error-Function**?
 
 
 

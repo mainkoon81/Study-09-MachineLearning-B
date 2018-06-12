@@ -684,7 +684,7 @@ def cross_entropy(Y, P):
 
 ### Cross Entropy is a connection between probabilities and error functions
  - Error = each element of Cross Entropy `-ln(P(pos))` or `-ln(1-P(pos))`
-<img src="https://user-images.githubusercontent.com/31917400/41286884-e0cec694-6e38-11e8-9d20-84b8530c0594.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41287452-a4c4686e-6e3a-11e8-8e4f-6af30eb339ac.jpg" />
  
 
 ### Concept_03. Logistic_Regression algorithm

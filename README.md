@@ -684,10 +684,8 @@ def cross_entropy(Y, P):
 
 ### Cross Entropy is a connection between probabilities and error functions
  - Error = each element of Cross Entropy `-ln(p)` or `-ln(q)`
+ - What we need is just to minimize the Error-Function (minimize the Entropy) !
 <img src="https://user-images.githubusercontent.com/31917400/41287452-a4c4686e-6e3a-11e8-8e4f-6af30eb339ac.jpg" />
- 
-
-### Concept_03. Logistic_Regression algorithm
 
 This is the building block of all that constitutes Deep Learning.
  - Take your data
@@ -695,7 +693,6 @@ This is the building block of all that constitutes Deep Learning.
  - Calculate the error
  - Minimize the error, and obtain a better model
  
-> Then how to calculate the **Error-Function**?
 
 
 

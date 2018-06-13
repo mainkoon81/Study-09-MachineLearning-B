@@ -545,7 +545,7 @@ bias = 1.0
    - Combine perceptions: "the output of one = the input of another one"...'Neural Network'
 <img src="https://user-images.githubusercontent.com/31917400/39961747-d552235e-5634-11e8-99ce-aed8a2aae548.jpg" />
 
-### Perceptron Trick 
+### Perceptron Trick to improve our model
  - Now that we've learned that the points that are misclassified, and want the line to move closer to them. How to modify the equation of the line, so that it comes closer to a particular point?
  - Here is the example. Need to repeat this until the point becomes well-classified (For blue point, need to repeat 10 times).
 <img src="https://user-images.githubusercontent.com/31917400/39961894-2f16c9f0-5638-11e8-86c0-364cec797eb0.jpg" />

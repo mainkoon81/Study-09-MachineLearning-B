@@ -689,10 +689,38 @@ This is the building block of all that constitutes Deep Learning.
  - Take your data
  - Pick a random model
  - Calculate the error
- - **Minimize the error, and obtain a better model**
+
+### Gradient Descent Algorithm
+<img src="https://user-images.githubusercontent.com/31917400/41379137-1f4249e8-6f59-11e8-87c4-51b6305545e2.jpg" />
+
+ - **Minimize the Error-Function, and obtain a better model**
 <img src="https://user-images.githubusercontent.com/31917400/41376136-3c9e671e-6f50-11e8-9982-4916a2e15e7f.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/41378289-8b57ee56-6f56-11e8-8cdc-68d3c9c442d4.jpg" />
- 
+
+> Example
+ - Implementing the functions that build the gradient descent algorithm:
+   - **sigmoid**: The sigmoid activation function.
+   - **output_formula**: The formula for the prediction.
+   - **error_formula**: The formula for the error at a point.
+   - **update_weights**: The function that updates the parameters with one gradient descent step.
+```
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
+def output_formula(features, weights, bias):
+    return sigmoid(np.dot(features, weights) + bias)
+
+def error_formula(y, output):
+    return - y*np.log(output) - (1 - y) * np.log(1-output)
+
+def update_weights(x, y, weights, bias, learnrate):
+    output = output_formula(x, weights, bias)
+    d_error = -(y - output)
+    weights -= learnrate * d_error * x
+    bias -= learnrate * d_error
+    return weights, bias
+```
+
 
 
 

@@ -696,7 +696,7 @@ This is the building block of all that constitutes Deep Learning.
  - Calculate the error
  - **Minimize the Error-Function, and obtain a better model**
 <img src="https://user-images.githubusercontent.com/31917400/41376136-3c9e671e-6f50-11e8-9982-4916a2e15e7f.jpg" />
-<img src="https://user-images.githubusercontent.com/31917400/41378289-8b57ee56-6f56-11e8-8cdc-68d3c9c442d4.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41380684-ace25fa0-6f5d-11e8-88b4-827ec2b98fa8.jpg" />
 
 > Example
  - Implementing the functions that build the gradient descent algorithm:

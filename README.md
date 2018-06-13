@@ -690,10 +690,6 @@ This is the building block of all that constitutes Deep Learning.
  - Take your data
  - Pick a random model
  - Calculate the error
-
-### Gradient Descent Algorithm
-<img src="https://user-images.githubusercontent.com/31917400/41379137-1f4249e8-6f59-11e8-87c4-51b6305545e2.jpg" />
-
  - **Minimize the Error-Function, and obtain a better model**
 <img src="https://user-images.githubusercontent.com/31917400/41376136-3c9e671e-6f50-11e8-9982-4916a2e15e7f.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/41378289-8b57ee56-6f56-11e8-8cdc-68d3c9c442d4.jpg" />

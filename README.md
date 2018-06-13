@@ -691,7 +691,8 @@ This is the building block of all that constitutes Deep Learning.
  - Take your data
  - Pick a random model
  - Calculate the error
- - Minimize the error, and obtain a better model
+ - **Minimize the error, and obtain a better model**
+<img src="https://user-images.githubusercontent.com/31917400/41352240-d01b87be-6f10-11e8-84e4-f2409ea8e114.jpg" />
  
 
 

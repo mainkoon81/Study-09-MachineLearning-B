@@ -549,8 +549,6 @@ bias = 1.0
  - Now that we've learned that the points that are misclassified, and want the line to move closer to them. How to modify the equation of the line, so that it comes closer to a particular point?
  - Here is the example. Need to repeat this until the point becomes well-classified (For blue point, need to repeat 10 times).
 <img src="https://user-images.githubusercontent.com/31917400/39961894-2f16c9f0-5638-11e8-86c0-364cec797eb0.jpg" />
-
-### Algorithm
 <img src="https://user-images.githubusercontent.com/31917400/39962325-8ef2c062-5643-11e8-8bef-c7e7adbf472d.jpg" />
 
 > Example

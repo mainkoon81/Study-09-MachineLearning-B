@@ -545,7 +545,10 @@ bias = 1.0
    - Combine perceptions: "the output of one = the input of another one"...'Neural Network'
 <img src="https://user-images.githubusercontent.com/31917400/39961747-d552235e-5634-11e8-99ce-aed8a2aae548.jpg" />
 
-### Perceptron Trick to improve our model
+### Perceptron Algorithm & Gradient Descent Algorithm (for model improvement)
+<img src="https://user-images.githubusercontent.com/31917400/41379764-cc4f2a9c-6f5a-11e8-8562-f195b44230b9.jpg" />
+
+#### 1> Perceptron Trick 
  - Now that we've learned that the points that are misclassified, and want the line to move closer to them. How to modify the equation of the line, so that it comes closer to a particular point?
  - Here is the example. Need to repeat this until the point becomes well-classified (For blue point, need to repeat 10 times).
 <img src="https://user-images.githubusercontent.com/31917400/39961894-2f16c9f0-5638-11e8-86c0-364cec797eb0.jpg" />
@@ -608,9 +611,8 @@ def trainPerceptronAlgorithm(X, y, learn_rate = 0.01, num_epochs = 25):
 ```
 <img src="https://user-images.githubusercontent.com/31917400/39966015-6f875a4a-569c-11e8-804d-1b2452f3de83.jpg" />
 
-## Non-Linear DecisionSurf and perceptrons
-
-### Concept_01. **Error-Function**(Gradient_Descent Method)
+#### 2> Gradient Descent Trick
+> Concept_01. **Error-Function**
 It tells us how far we are from the solution(it's a distance).
  - It should be continuous!
  - It should be differentiable! (just like minimizing SSE in linear model.)
@@ -623,8 +625,7 @@ Two perceptrons
  - Note the change in activation function(from Step to Sigmoid). Instead of returning 0/1, the new percaptron offer each probability!
 <img src="https://user-images.githubusercontent.com/31917400/41206510-138f1800-6cfd-11e8-8cec-63a6233c6ff0.jpg" />
 
-### Concept_02. Multi-class Classification
-
+> Concept_02. **Multi-class Classification**
 **1. Softmax Function**
 
 When the problem has 3 or more classes ? How to turn all scores(WX+b, which is a linear function) into probabilities?(of course, Sigmoid)
@@ -677,7 +678,7 @@ def cross_entropy(Y, P):
 ```
 <img src="https://user-images.githubusercontent.com/31917400/41241502-006d4a92-6d95-11e8-9a9e-bed37efbbccd.jpg" />
 
-> **Multiclass Cross-Entropy**
+ - **Multiclass Cross-Entropy**
 <img src="https://user-images.githubusercontent.com/31917400/41258337-a968f5a6-6dc7-11e8-885e-6e6bef775c1d.jpg" />
 
 ### Cross Entropy is a connection between probabilities and error functions

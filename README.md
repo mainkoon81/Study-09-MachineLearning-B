@@ -633,7 +633,7 @@ def trainPerceptronAlgorithm(X, y, learn_rate = 0.01, num_epochs = 25):
 Move from the discrete to the continuous!
 <img src="https://user-images.githubusercontent.com/31917400/41206423-b5992a52-6cfb-11e8-911f-b406ac6c3f5a.jpg" />
 
-### MaximumLikelihood and Error Function
+### > MaximumLikelihood and Error Function
 Let's say we want to calculate **probability** the four points are of the **colors that they actually are**. We assume the colors of the points are independent events, then the probability for the **`whole arrangement`** is the product of the probabilities of the four points. If the model is given by these probability spaces, then the **probability that the points are of this colors** offers the clue of which model is better. 
 <img src="https://user-images.githubusercontent.com/31917400/41233369-28e09cd6-6d81-11e8-947d-11ba772b9e33.jpg" />
 
@@ -650,7 +650,7 @@ Let's say we want to calculate **probability** the four points are of the **colo
 
 > Q. **What if the number of datapoints are astronomical?** Then producting is not a good idea. We again need a log-function that turns products into sums...and remember..when input is ranged from 0 to 1(coz..they are probabilities), the logarithm gives negative. And this is the **Entropy** function. 
 
-### Cross Entropy
+### > Cross Entropy
 Cross Entropy is the **Error-Function**! If I have a bunch of events and probabilities, Cross-Entropy says **how likely those events happen based on the probabilities**. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 
  - A good model gives a low cross-entropy and a bad model gives a high cross-entropy. So our goal has changed: 
    - **Minimize the Cross Entropy = Maximize the probability**
@@ -666,7 +666,7 @@ def cross_entropy(Y, P):
 ```
 <img src="https://user-images.githubusercontent.com/31917400/41241502-006d4a92-6d95-11e8-9a9e-bed37efbbccd.jpg" />
 
-### Multiclass Cross-Entropy
+### > Multiclass Cross-Entropy
  - 1. **Softmax Function**: When the problem has 3 or more classes ? How to turn all scores(WX+b, which is a linear function) into probabilities?(of course, Sigmoid)
      - Note that scores often can be negative, and we need to calculate probability. See 'exp() of Sigmoid' can turn them into positive. 
 <img src="https://user-images.githubusercontent.com/31917400/41224711-06ad2c7c-6d65-11e8-8264-0f966ac381b3.jpg" />
@@ -691,7 +691,7 @@ def softmax(L):
  - 3. formula
 <img src="https://user-images.githubusercontent.com/31917400/41258337-a968f5a6-6dc7-11e8-885e-6e6bef775c1d.jpg" />
 
-### Again, Cross Entropy is a connection between probabilities and error functions. We define our Error Function as 'Cross Entropy'.
+### Again, Cross Entropy is a connection between probabilities and error functions. We define our Error Function, using 'Cross Entropy'.
  - Error = each element of Cross Entropy `-ln(p)` or `-ln(q)`
  - What we need is just to minimize the Error-Function (minimize `Cross_Entropy / n`) !
 <img src="https://user-images.githubusercontent.com/31917400/41287452-a4c4686e-6e3a-11e8-8e4f-6af30eb339ac.jpg" />
@@ -701,6 +701,8 @@ def softmax(L):
 > - Pick a random model
 > - Calculate the error
 > - **Minimize the Error-Function, and obtain a better model**
+
+### > Minimization of Error-Function
 <img src="https://user-images.githubusercontent.com/31917400/41376136-3c9e671e-6f50-11e8-9982-4916a2e15e7f.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/41380684-ace25fa0-6f5d-11e8-88b4-827ec2b98fa8.jpg" />
 

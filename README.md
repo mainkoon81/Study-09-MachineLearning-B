@@ -476,7 +476,7 @@ parameters (degree, C, Gamma)
 -------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------
-## (E) Perceptron Algorithm for "Neural-Network"
+## (E) Perceptron Algorithm
  - For categoric data (Y/N)
  - 
 <img src="https://user-images.githubusercontent.com/31917400/39047770-10482214-4493-11e8-8103-03c5425c0534.jpg" />   
@@ -484,8 +484,8 @@ parameters (degree, C, Gamma)
  - Our model has 'input data-pt', 'weights', 'bias'
 <img src="https://user-images.githubusercontent.com/31917400/39957980-d507b40e-55f3-11e8-80e1-debf35768067.jpg" />
  
-### Perceptron
- - Perceptron refers a combination of nodes (here, Linear_function_Node + Step_function_Node)
+### Perceptron Example(logical operator)
+ - Perceptron refers a combination of nodes (Here, `Step_func(Linear_func())`)
  - Application example: Perceptron can be a logical operator: AND, OR, NOT, XOR...
    - Take two inputs then returns an output.
 <img src="https://user-images.githubusercontent.com/31917400/39961806-b1513700-5635-11e8-9edf-f3cde879577c.jpg" />
@@ -545,7 +545,17 @@ bias = 1.0
    - Combine perceptions: "the output of one = the input of another one"...'Neural Network'
 <img src="https://user-images.githubusercontent.com/31917400/39961747-d552235e-5634-11e8-99ce-aed8a2aae548.jpg" />
 
-# Two Building blocks
+## What does the perceptron look like?
+<img src="https://user-images.githubusercontent.com/31917400/41501558-d9050b76-719e-11e8-9ff2-cdd40987ce51.jpg" />
+
+
+
+
+
+
+
+
+### Two Building blocks
  - Perceptron Algorithm (for model improvement)
  - Gradient Descent Algorithm (for model improvement)
 <img src="https://user-images.githubusercontent.com/31917400/41379764-cc4f2a9c-6f5a-11e8-8562-f195b44230b9.jpg" />

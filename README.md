@@ -637,19 +637,18 @@ Move from the discrete to the continuous!
 Let's say we want to calculate **probability** the four points are of the **colors that they actually are**. We assume the colors of the points are independent events, then the probability for the **`whole arrangement`** is the product of the probabilities of the four points. If the model is given by these probability spaces, then the **probability that the points are of this colors** offers the clue of which model is better. 
 <img src="https://user-images.githubusercontent.com/31917400/41233369-28e09cd6-6d81-11e8-947d-11ba772b9e33.jpg" />
 
-> So how to maximize the probability?
+> Q. So how to maximize the probability?
 
-> So how to minimize the Error-Function? 
+> Q. So how to minimize the Error-Function? 
 
-> Can we obtain an error-Function from the probability? Maximized probability can yield the minimised Error-Function?
+> Q. Can we obtain an error-Function from the probability? Maximized probability can yield the minimised Error-Function?
 
 > In general, an Error-Function tells us how far we are from the solution(it's a distance).
 > - It should be continuous!
 > - It should be differentiable! (just like minimizing SSE in linear model.)
 <img src="https://user-images.githubusercontent.com/31917400/41206106-c62ad73a-6cf6-11e8-8307-d38aeda8113a.jpg" />
 
-> Another Issue: 
-**What if the number of datapoints are astronomical?** Then producting is not a good idea. We again need a log-function that turns products into sums...and remember..when input is ranged from 0 to 1(coz..they are probabilities), the logarithm gives negative. And this is the Entropy function. 
+> Q. **What if the number of datapoints are astronomical?** Then producting is not a good idea. We again need a log-function that turns products into sums...and remember..when input is ranged from 0 to 1(coz..they are probabilities), the logarithm gives negative. And this is the Entropy function. 
 
 ### Cross Entropy
 Cross Entropy is the **Error-Function**! If I have a bunch of events and probabilities, Cross-Entropy says **how likely those events happen based on the probabilities**. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 

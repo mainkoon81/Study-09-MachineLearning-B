@@ -648,10 +648,10 @@ Let's say we want to calculate **probability** the four points are of the **colo
 > - It should be differentiable! (just like minimizing SSE in linear model.)
 <img src="https://user-images.githubusercontent.com/31917400/41206106-c62ad73a-6cf6-11e8-8307-d38aeda8113a.jpg" />
 
-### Cross Entropy
-Cross Entropy is the **Error-Function**! 
+What if the number of datapoints are astronomical? Then producting is not a good idea. We need a log-function that turns products into sums...and remember..when input is ranged from 0 to 1(coz..they are probabilities), the logarithm gives negative. And this is the Entropy function. 
 
-If I have a bunch of events and probabilities, Cross-Entropy says **how likely those events happen based on the probabilities**. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 
+### Cross Entropy
+Cross Entropy is the **Error-Function**! If I have a bunch of events and probabilities, Cross-Entropy says **how likely those events happen based on the probabilities**. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 
  - A good model gives a low cross-entropy and a bad model gives a high cross-entropy. So our goal has changed: 
    - **Minimize the Cross Entropy = Maximize the probability**
 <img src="https://user-images.githubusercontent.com/31917400/41236233-86a74a52-6d88-11e8-801e-6eeccc2afdec.jpg" />
@@ -677,7 +677,7 @@ def cross_entropy(Y, P):
 
 
 
-What if the number of datapoints are astronomical? Then producting is not a good idea. We need a log-function that turns products into sums...and remember..when input is ranged from 0 to 1, the logarithm gives negative. And this is the Entropy function. 
+
 
 
 
@@ -730,6 +730,9 @@ What if some input data is not numerical?
  - What we need is just to minimize the Error-Function (minimize `Cross_Entropy / n`) !
 <img src="https://user-images.githubusercontent.com/31917400/41287452-a4c4686e-6e3a-11e8-8e4f-6af30eb339ac.jpg" />
 
+
+
+
 This is the building block of all that constitutes Deep Learning.
  - Take your data
  - Pick a random model
@@ -737,6 +740,11 @@ This is the building block of all that constitutes Deep Learning.
  - **Minimize the Error-Function, and obtain a better model**
 <img src="https://user-images.githubusercontent.com/31917400/41376136-3c9e671e-6f50-11e8-9982-4916a2e15e7f.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/41380684-ace25fa0-6f5d-11e8-88b4-827ec2b98fa8.jpg" />
+
+
+
+
+
 
 > Example
  - Implementing the functions that build the gradient descent algorithm:

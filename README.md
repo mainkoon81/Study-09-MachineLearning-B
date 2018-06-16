@@ -558,7 +558,9 @@ bias = 1.0
  - **Perceptron Algorithm**: 
    - Focus on the missclassified points(it will give the direction)
    - Because of the Step function, y and y_hat have the value of `0 / 1`. 
- - **Gradient_Descent Algorithm**: dealing with `probability` 
+ - **Gradient_Descent Algorithm**: 
+ 
+   - Because of the Sigmoid function, y and y_hat have the `probability` value.  
 <img src="https://user-images.githubusercontent.com/31917400/41379764-cc4f2a9c-6f5a-11e8-8562-f195b44230b9.jpg" />
 
 ## 1> Perceptron Trick 

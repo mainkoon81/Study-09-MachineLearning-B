@@ -552,7 +552,7 @@ bias = 1.0
 <img src="https://user-images.githubusercontent.com/31917400/41501558-d9050b76-719e-11e8-9ff2-cdd40987ce51.jpg" />
 
 ### Two Building blocks
- - This is about the automatic process for model improvement **by adjusting parameters(W, b) of the linear Model**.
+ - This is about the automatic process for model improvement **by adjusting parameters(W, b) of the Linear Model**.
 <img src="https://user-images.githubusercontent.com/31917400/41501736-f8e72a02-71a1-11e8-81e2-39e0d2706314.jpg" />
 
  - **Perceptron Algorithm**: 
@@ -562,7 +562,7 @@ bias = 1.0
  - **Gradient_Descent Algorithm**: 
    - Focus on 
    - Because of the Sigmoid function, y and y_hat have the value of `probability`.
-   - Thus the difference between **y** and **y_hat** is `0 < values < 1`. 
+   - Thus, the difference between **y** and **y_hat** is `0 < values < 1`. 
 <img src="https://user-images.githubusercontent.com/31917400/41501829-b2dc425c-71a3-11e8-8720-985f52975d8d.jpg" />
 
 ## 1> Perceptron Trick 

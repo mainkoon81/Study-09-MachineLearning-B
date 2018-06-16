@@ -548,16 +548,10 @@ bias = 1.0
 ## What does the perceptron look like?
 <img src="https://user-images.githubusercontent.com/31917400/41501558-d9050b76-719e-11e8-9ff2-cdd40987ce51.jpg" />
 
-
-
-
-
-
-
-
 ### Two Building blocks
- - Perceptron Algorithm (for model improvement)
- - Gradient Descent Algorithm (for model improvement)
+ - This is about the automatic process for model improvement!
+   - **Perceptron Algorithm**: dealing with ` ` 
+   - **Gradient_Descent Algorithm**: dealing with `probability` 
 <img src="https://user-images.githubusercontent.com/31917400/41379764-cc4f2a9c-6f5a-11e8-8562-f195b44230b9.jpg" />
 
 ## 1> Perceptron Trick 

@@ -637,14 +637,40 @@ Move from the discrete to the continuous!
 Let's say we want to calculate **probability** the four points are of the **colors that they actually are**. We assume the colors of the points are independent events, then the probability for the **`whole arrangement`** is the product of the probabilities of the four points. If the model is given by these probability spaces, then the **probability that the points are of this colors** offers the clue of which model is better. 
 <img src="https://user-images.githubusercontent.com/31917400/41233369-28e09cd6-6d81-11e8-947d-11ba772b9e33.jpg" />
 
-> So how to maximize the probability? 
+> So how to maximize the probability?
+
 > So how to minimize the Error-Function? 
+
 > Can we obtain an error-Function from the probability? Maximized probability can yield the minimised Error-Function?
 
 An Error-Function tells us how far we are from the solution(it's a distance).
  - It should be continuous!
  - It should be differentiable! (just like minimizing SSE in linear model.)
 <img src="https://user-images.githubusercontent.com/31917400/41206106-c62ad73a-6cf6-11e8-8307-d38aeda8113a.jpg" />
+
+### Cross Entropy
+Cross Entropy is a connection between **probabilities** and **Error-Function**!
+
+If I have a bunch of events and probabilities, Cross-Entropy says **how likely those events happen based on the probabilities**. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 
+ - A good model gives a low cross-entropy and a bad model gives a high cross-entropy. So our goal has changed: 
+   - **Minimize the Cross Entropy!**
+<img src="https://user-images.githubusercontent.com/31917400/41236233-86a74a52-6d88-11e8-801e-6eeccc2afdec.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41258451-180b7c72-6dc8-11e8-99d9-cacdb4f6efa6.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41258664-ee295450-6dc8-11e8-9c71-a9ea330f8ad0.jpg" />
+
+```
+def cross_entropy(Y, P):
+    Y = np.float_(Y)
+    P = np.float_(P)
+    return(-np.sum(Y*np.log(P) + (1-Y)*np.log(1-P)))
+```
+<img src="https://user-images.githubusercontent.com/31917400/41241502-006d4a92-6d95-11e8-9a9e-bed37efbbccd.jpg" />
+
+ - **Multiclass Cross-Entropy**
+<img src="https://user-images.githubusercontent.com/31917400/41258337-a968f5a6-6dc7-11e8-885e-6e6bef775c1d.jpg" />
+
+
+
 
 
 
@@ -689,25 +715,15 @@ What if some input data is not numerical?
 
 
 
-**4. Cross-Entropy**
 
-If I have a bunch of events and probabilities, Cross-Entropy says **how likely those events happen based on the probabilities**. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 
- - A good model gives a low cross-entropy and a bad model gives a high cross-entropy. So our goal has changed: 
-   - **Minimize the Cross Entropy!**
-<img src="https://user-images.githubusercontent.com/31917400/41236233-86a74a52-6d88-11e8-801e-6eeccc2afdec.jpg" />
-<img src="https://user-images.githubusercontent.com/31917400/41258451-180b7c72-6dc8-11e8-99d9-cacdb4f6efa6.jpg" />
-<img src="https://user-images.githubusercontent.com/31917400/41258664-ee295450-6dc8-11e8-9c71-a9ea330f8ad0.jpg" />
 
-```
-def cross_entropy(Y, P):
-    Y = np.float_(Y)
-    P = np.float_(P)
-    return(-np.sum(Y*np.log(P) + (1-Y)*np.log(1-P)))
-```
-<img src="https://user-images.githubusercontent.com/31917400/41241502-006d4a92-6d95-11e8-9a9e-bed37efbbccd.jpg" />
 
- - **Multiclass Cross-Entropy**
-<img src="https://user-images.githubusercontent.com/31917400/41258337-a968f5a6-6dc7-11e8-885e-6e6bef775c1d.jpg" />
+
+
+
+
+
+
 
 ### Cross Entropy is a connection between probabilities and error functions
  - Error = each element of Cross Entropy `-ln(p)` or `-ln(q)`

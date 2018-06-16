@@ -545,13 +545,20 @@ bias = 1.0
    - Combine perceptions: "the output of one = the input of another one"...'Neural Network'
 <img src="https://user-images.githubusercontent.com/31917400/39961747-d552235e-5634-11e8-99ce-aed8a2aae548.jpg" />
 
+
+
+
 ## What does the perceptron look like?
 <img src="https://user-images.githubusercontent.com/31917400/41501558-d9050b76-719e-11e8-9ff2-cdd40987ce51.jpg" />
 
 ### Two Building blocks
  - This is about the automatic process for model improvement **by adjusting parameters(W, b) of the linear Model**.
-   - **Perceptron Algorithm**: dealing with ` ` 
-   - **Gradient_Descent Algorithm**: dealing with `probability` 
+<img src="https://user-images.githubusercontent.com/31917400/41501736-f8e72a02-71a1-11e8-81e2-39e0d2706314.jpg" />
+
+ - **Perceptron Algorithm**: 
+   - Focus on the missclassified points(it will give the direction)
+   - Because of the Step function, y and y_hat have the value of `0 / 1`. 
+ - **Gradient_Descent Algorithm**: dealing with `probability` 
 <img src="https://user-images.githubusercontent.com/31917400/41379764-cc4f2a9c-6f5a-11e8-8562-f195b44230b9.jpg" />
 
 ## 1> Perceptron Trick 

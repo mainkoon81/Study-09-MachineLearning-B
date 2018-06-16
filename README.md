@@ -565,6 +565,7 @@ bias = 1.0
    - Thus, the difference between **y** and **y_hat** is `-1 < values < 1`. 
 <img src="https://user-images.githubusercontent.com/31917400/41501829-b2dc425c-71a3-11e8-8720-985f52975d8d.jpg" />
 
+# We want to improve our model!
 ## 1> Perceptron Trick(with Step function) 
  - Now that we've learned that the points that are misclassified, and want the line to move closer to them. How to modify the equation of the line, so that it comes closer to a particular point?
  - Here is the example. Need to repeat this until the point becomes well-classified (For blue point, need to repeat 10 times).
@@ -627,12 +628,13 @@ def trainPerceptronAlgorithm(X, y, learn_rate = 0.01, num_epochs = 25):
 ```
 <img src="https://user-images.githubusercontent.com/31917400/39966015-6f875a4a-569c-11e8-804d-1b2452f3de83.jpg" />
 
+# We want to improve our model!
 ## 2> Gradient Descent Trick(with Sigmoid function)
 Move from the discrete to the continuous!
 <img src="https://user-images.githubusercontent.com/31917400/41206423-b5992a52-6cfb-11e8-911f-b406ac6c3f5a.jpg" />
 
-## MaximumLikelihood to improve our model
-We want to calculate **probability the four points are of the colors** that they **actually** are. We assume the colors of the points are independent events, then the probability for the **whole arrangement** is the product of the probabilities of the four points. If the model is given by these probability spaces, then the **probability that the points are of this colors** offers the clue of which model is better. 
+### MaximumLikelihood
+Let's say we want to calculate **probability** the four points are of the **colors that they actually are**. We assume the colors of the points are independent events, then the probability for the **`whole arrangement`** is the product of the probabilities of the four points. If the model is given by these probability spaces, then the **probability that the points are of this colors** offers the clue of which model is better. 
 <img src="https://user-images.githubusercontent.com/31917400/41233369-28e09cd6-6d81-11e8-947d-11ba772b9e33.jpg" />
 
  - So how to maximize the probability? 

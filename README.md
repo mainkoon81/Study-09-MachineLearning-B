@@ -565,7 +565,7 @@ bias = 1.0
    - Thus, the difference between **y** and **y_hat** is `-1 < values < 1`. 
 <img src="https://user-images.githubusercontent.com/31917400/41501829-b2dc425c-71a3-11e8-8720-985f52975d8d.jpg" />
 
-## 1> Perceptron Trick 
+## 1> Perceptron Trick(with Step function) 
  - Now that we've learned that the points that are misclassified, and want the line to move closer to them. How to modify the equation of the line, so that it comes closer to a particular point?
  - Here is the example. Need to repeat this until the point becomes well-classified (For blue point, need to repeat 10 times).
 <img src="https://user-images.githubusercontent.com/31917400/39961894-2f16c9f0-5638-11e8-86c0-364cec797eb0.jpg" />
@@ -627,7 +627,7 @@ def trainPerceptronAlgorithm(X, y, learn_rate = 0.01, num_epochs = 25):
 ```
 <img src="https://user-images.githubusercontent.com/31917400/39966015-6f875a4a-569c-11e8-804d-1b2452f3de83.jpg" />
 
-## 2> Gradient Descent Trick
+## 2> Gradient Descent Trick(with Sigmoid function)
 
 > Concept_01. **Error-Function**
 

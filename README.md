@@ -643,9 +643,9 @@ Let's say we want to calculate **probability** the four points are of the **colo
 
 > Can we obtain an error-Function from the probability? Maximized probability can yield the minimised Error-Function?
 
-An Error-Function tells us how far we are from the solution(it's a distance).
- - It should be continuous!
- - It should be differentiable! (just like minimizing SSE in linear model.)
+> In general, an Error-Function tells us how far we are from the solution(it's a distance).
+> - It should be continuous!
+> - It should be differentiable! (just like minimizing SSE in linear model.)
 <img src="https://user-images.githubusercontent.com/31917400/41206106-c62ad73a-6cf6-11e8-8307-d38aeda8113a.jpg" />
 
 ### Cross Entropy

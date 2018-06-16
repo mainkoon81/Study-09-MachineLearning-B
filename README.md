@@ -649,7 +649,7 @@ An Error-Function tells us how far we are from the solution(it's a distance).
 <img src="https://user-images.githubusercontent.com/31917400/41206106-c62ad73a-6cf6-11e8-8307-d38aeda8113a.jpg" />
 
 ### Cross Entropy
-Cross Entropy is a connection between **probabilities** and **Error-Function**!
+Cross Entropy is the **Error-Function**! 
 
 If I have a bunch of events and probabilities, Cross-Entropy says **how likely those events happen based on the probabilities**. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 
  - A good model gives a low cross-entropy and a bad model gives a high cross-entropy. So our goal has changed: 

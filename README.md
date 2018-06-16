@@ -557,10 +557,12 @@ bias = 1.0
 
  - **Perceptron Algorithm**: 
    - Focus on the missclassified points(it will give the direction)
-   - Because of the Step function, y and y_hat have the value of `0 / 1`. 
+   - Because of the Step function, y and y_hat have the value of `0 / 1`.
+   - Thus, the difference between **y** and **y_hat** is `1` or `-1`.
  - **Gradient_Descent Algorithm**: 
    - Focus on 
-   - Because of the Sigmoid function, y and y_hat have the value of `probability`.  
+   - Because of the Sigmoid function, y and y_hat have the value of `probability`.
+   - Thus the difference between **y** and **y_hat** is `0 < values < 1`. 
 <img src="https://user-images.githubusercontent.com/31917400/41501829-b2dc425c-71a3-11e8-8720-985f52975d8d.jpg" />
 
 ## 1> Perceptron Trick 

@@ -559,9 +559,9 @@ bias = 1.0
    - Focus on the missclassified points(it will give the direction)
    - Because of the Step function, y and y_hat have the value of `0 / 1`. 
  - **Gradient_Descent Algorithm**: 
- 
+   - 
    - Because of the Sigmoid function, y and y_hat have the `probability` value.  
-<img src="https://user-images.githubusercontent.com/31917400/41379764-cc4f2a9c-6f5a-11e8-8562-f195b44230b9.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41501829-b2dc425c-71a3-11e8-8720-985f52975d8d.jpg" />
 
 ## 1> Perceptron Trick 
  - Now that we've learned that the points that are misclassified, and want the line to move closer to them. How to modify the equation of the line, so that it comes closer to a particular point?

@@ -559,8 +559,8 @@ bias = 1.0
    - Focus on the missclassified points(it will give the direction)
    - Because of the Step function, y and y_hat have the value of `0 / 1`. 
  - **Gradient_Descent Algorithm**: 
-   - 
-   - Because of the Sigmoid function, y and y_hat have the `probability` value.  
+   - Focus on 
+   - Because of the Sigmoid function, y and y_hat have the value of `probability`.  
 <img src="https://user-images.githubusercontent.com/31917400/41501829-b2dc425c-71a3-11e8-8720-985f52975d8d.jpg" />
 
 ## 1> Perceptron Trick 

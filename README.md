@@ -686,61 +686,23 @@ def softmax(L):
     return(np.divide(expL, sum(expL)))    
 ```
  - 2. **One hot encoding**: What if some input data is not numerical?   
-<img src="https://user-images.githubusercontent.com/31917400/41227645-7153369a-6d6d-11e8-9e91-5b637e992979.jpg" /> 
+<img src="https://user-images.githubusercontent.com/31917400/41227645-7153369a-6d6d-11e8-9e91-5b637e992979.jpg" />
+
+ - 3. formula
 <img src="https://user-images.githubusercontent.com/31917400/41258337-a968f5a6-6dc7-11e8-885e-6e6bef775c1d.jpg" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Cross Entropy is a connection between probabilities and error functions
+### Again, Cross Entropy is a connection between probabilities and error functions
  - Error = each element of Cross Entropy `-ln(p)` or `-ln(q)`
  - What we need is just to minimize the Error-Function (minimize `Cross_Entropy / n`) !
 <img src="https://user-images.githubusercontent.com/31917400/41287452-a4c4686e-6e3a-11e8-8e4f-6af30eb339ac.jpg" />
 
-
-
-
-This is the building block of all that constitutes Deep Learning.
- - Take your data
- - Pick a random model
- - Calculate the error
- - **Minimize the Error-Function, and obtain a better model**
+> This is the building block of all that constitutes Deep Learning.
+> - Take your data
+> - Pick a random model
+> - Calculate the error
+> - **Minimize the Error-Function, and obtain a better model**
 <img src="https://user-images.githubusercontent.com/31917400/41376136-3c9e671e-6f50-11e8-9982-4916a2e15e7f.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/41380684-ace25fa0-6f5d-11e8-88b4-827ec2b98fa8.jpg" />
-
-
-
-
-
 
 > Example
  - Implementing the functions that build the gradient descent algorithm:

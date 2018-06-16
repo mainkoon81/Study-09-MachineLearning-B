@@ -640,7 +640,15 @@ Let's say we want to calculate **probability** the four points are of the **colo
  - So how to maximize the probability? 
  - So how to minimize the Error-Function? 
  - Can we obtain an error-Function from the probability? Maximized probability can yield the minimised Error-Function?
- - What if the number of datapoints are astronomical? Then producting is not a good idea. We need a log-function that turns products into sums...and remember..when input is ranged from 0 to 1, the logarithm gives negative. And this is the Entropy function. 
+
+
+
+
+
+What if the number of datapoints are astronomical? Then producting is not a good idea. We need a log-function that turns products into sums...and remember..when input is ranged from 0 to 1, the logarithm gives negative. And this is the Entropy function. 
+
+
+
 
 
 

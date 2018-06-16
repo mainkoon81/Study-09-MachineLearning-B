@@ -651,7 +651,7 @@ Let's say we want to calculate **probability** the four points are of the **colo
 > Q. **What if the number of datapoints are astronomical?** Then producting is not a good idea. We again need a log-function that turns products into sums...and remember..when input is ranged from 0 to 1(coz..they are probabilities), the logarithm gives negative. And this is the **Entropy** function. 
 
 ### > Cross Entropy
-Cross Entropy is the **Error-Function**! If I have a bunch of events and probabilities, Cross-Entropy says **how likely those events happen based on the probabilities**. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 
+We here, define **Error-Function**, using Cross Entropy. If I have a bunch of events and probabilities, Cross-Entropy says **how likely those events happen based on the probabilities**. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 
  - A good model gives a low cross-entropy and a bad model gives a high cross-entropy. So our goal has changed: 
    - **Minimize the Cross Entropy = Maximize the probability**
 <img src="https://user-images.githubusercontent.com/31917400/41236233-86a74a52-6d88-11e8-801e-6eeccc2afdec.jpg" />
@@ -702,7 +702,7 @@ def softmax(L):
 > - Calculate the error
 > - **Minimize the Error-Function, and obtain a better model**
 
-### > Minimization of Error-Function
+### > Minimization of our Error-Function
 <img src="https://user-images.githubusercontent.com/31917400/41376136-3c9e671e-6f50-11e8-9982-4916a2e15e7f.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/41380684-ace25fa0-6f5d-11e8-88b4-827ec2b98fa8.jpg" />
 

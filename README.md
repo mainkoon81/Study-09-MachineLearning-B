@@ -653,7 +653,7 @@ Cross Entropy is a connection between **probabilities** and **Error-Function**!
 
 If I have a bunch of events and probabilities, Cross-Entropy says **how likely those events happen based on the probabilities**. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 
  - A good model gives a low cross-entropy and a bad model gives a high cross-entropy. So our goal has changed: 
-   - **Minimize the Cross Entropy!**
+   - **Minimize the Cross Entropy = Maximize the probability**
 <img src="https://user-images.githubusercontent.com/31917400/41236233-86a74a52-6d88-11e8-801e-6eeccc2afdec.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/41258451-180b7c72-6dc8-11e8-99d9-cacdb4f6efa6.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/41258664-ee295450-6dc8-11e8-9c71-a9ea330f8ad0.jpg" />

@@ -553,7 +553,7 @@ bias = 1.0
 
 ### Two Building blocks
  - This is about the automatic process for model improvement **by adjusting parameters(W, b) of the Linear Model**.
-<img src="https://user-images.githubusercontent.com/31917400/41501978-d9e80496-71a6-11e8-83e7-d758c7a1defe.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41501991-2259c732-71a7-11e8-957f-9bb84b41a21d.jpg" />
 
  - **Perceptron Algorithm**: 
    - Focus on the missclassified points(it will give the direction)

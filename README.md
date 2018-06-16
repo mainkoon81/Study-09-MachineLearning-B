@@ -648,7 +648,8 @@ Let's say we want to calculate **probability** the four points are of the **colo
 > - It should be differentiable! (just like minimizing SSE in linear model.)
 <img src="https://user-images.githubusercontent.com/31917400/41206106-c62ad73a-6cf6-11e8-8307-d38aeda8113a.jpg" />
 
-What if the number of datapoints are astronomical? Then producting is not a good idea. We need a log-function that turns products into sums...and remember..when input is ranged from 0 to 1(coz..they are probabilities), the logarithm gives negative. And this is the Entropy function. 
+> Another Issue: 
+**What if the number of datapoints are astronomical?** Then producting is not a good idea. We again need a log-function that turns products into sums...and remember..when input is ranged from 0 to 1(coz..they are probabilities), the logarithm gives negative. And this is the Entropy function. 
 
 ### Cross Entropy
 Cross Entropy is the **Error-Function**! If I have a bunch of events and probabilities, Cross-Entropy says **how likely those events happen based on the probabilities**. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 

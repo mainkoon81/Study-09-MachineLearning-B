@@ -648,7 +648,7 @@ Let's say we want to calculate **probability** the four points are of the **colo
 > - It should be differentiable! (just like minimizing SSE in linear model.)
 <img src="https://user-images.githubusercontent.com/31917400/41206106-c62ad73a-6cf6-11e8-8307-d38aeda8113a.jpg" />
 
-> Q. **What if the number of datapoints are astronomical?** Then producting is not a good idea. We again need a log-function that turns products into sums...and remember..when input is ranged from 0 to 1(coz..they are probabilities), the logarithm gives negative. And this is the Entropy function. 
+> Q. **What if the number of datapoints are astronomical?** Then producting is not a good idea. We again need a log-function that turns products into sums...and remember..when input is ranged from 0 to 1(coz..they are probabilities), the logarithm gives negative. And this is the **Entropy** function. 
 
 ### Cross Entropy
 Cross Entropy is the **Error-Function**! If I have a bunch of events and probabilities, Cross-Entropy says **how likely those events happen based on the probabilities**. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 
@@ -666,7 +666,27 @@ def cross_entropy(Y, P):
 ```
 <img src="https://user-images.githubusercontent.com/31917400/41241502-006d4a92-6d95-11e8-9a9e-bed37efbbccd.jpg" />
 
- - **Multiclass Cross-Entropy**
+### Multiclass Cross-Entropy
+ - 1. **Softmax Function**: When the problem has 3 or more classes ? How to turn all scores(WX+b, which is a linear function) into probabilities?(of course, Sigmoid)
+     - Note that scores often can be negative, and we need to calculate probability. See 'exp() of Sigmoid' can turn them into positive. 
+<img src="https://user-images.githubusercontent.com/31917400/41224711-06ad2c7c-6d65-11e8-8264-0f966ac381b3.jpg" />
+
+     - Let's say we have 'n' classes and our linear model(WX+b) gives us the score: Z_1...Z_n, each score for each class. Let's turn them into probabilities. Takes as input a list of numbers(scores), and returns the list of values(possibilities) given by the softmax function.
+```
+def softmax(L):
+    expL = np.exp(L)
+    S_expL = sum(expL)
+    result=[]
+    for i in expL:
+        result.append(i/S_expL)
+    return(result)
+    
+def softmax(L):
+    expL = np.exp(L)
+    return(np.divide(expL, sum(expL)))    
+```
+ - 2. **One hot encoding**: What if some input data is not numerical?   
+<img src="https://user-images.githubusercontent.com/31917400/41227645-7153369a-6d6d-11e8-9e91-5b637e992979.jpg" /> 
 <img src="https://user-images.githubusercontent.com/31917400/41258337-a968f5a6-6dc7-11e8-885e-6e6bef775c1d.jpg" />
 
 
@@ -686,32 +706,8 @@ def cross_entropy(Y, P):
 
 
 
-> Concept_02. **Multi-class Classification**
 
-**1. Softmax Function**
 
-When the problem has 3 or more classes ? How to turn all scores(WX+b, which is a linear function) into probabilities?(of course, Sigmoid)
- - Note that scores often can be negative, and we need to calculate probability. See 'exp() of Sigmoid' can turn them into positive. 
-<img src="https://user-images.githubusercontent.com/31917400/41224711-06ad2c7c-6d65-11e8-8264-0f966ac381b3.jpg" />
-
- - Let's say we have 'n' classes and our linear model(WX+b) gives us the score: Z_1...Z_n, each score for each class. Let's turn them into probabilities. Takes as input a list of numbers(scores), and returns the list of values(possibilities) given by the softmax function.
-```
-def softmax(L):
-    expL = np.exp(L)
-    S_expL = sum(expL)
-    result=[]
-    for i in expL:
-        result.append(i/S_expL)
-    return(result)
-    
-def softmax(L):
-    expL = np.exp(L)
-    return(np.divide(expL, sum(expL)))    
-```
-**2. One hot encoding**
-
-What if some input data is not numerical?   
-<img src="https://user-images.githubusercontent.com/31917400/41227645-7153369a-6d6d-11e8-9e91-5b637e992979.jpg" />
 
 
 

@@ -633,13 +633,19 @@ def trainPerceptronAlgorithm(X, y, learn_rate = 0.01, num_epochs = 25):
 Move from the discrete to the continuous!
 <img src="https://user-images.githubusercontent.com/31917400/41206423-b5992a52-6cfb-11e8-911f-b406ac6c3f5a.jpg" />
 
-### MaximumLikelihood
+### MaximumLikelihood and Error Function
 Let's say we want to calculate **probability** the four points are of the **colors that they actually are**. We assume the colors of the points are independent events, then the probability for the **`whole arrangement`** is the product of the probabilities of the four points. If the model is given by these probability spaces, then the **probability that the points are of this colors** offers the clue of which model is better. 
 <img src="https://user-images.githubusercontent.com/31917400/41233369-28e09cd6-6d81-11e8-947d-11ba772b9e33.jpg" />
 
  - So how to maximize the probability? 
  - So how to minimize the Error-Function? 
  - Can we obtain an error-Function from the probability? Maximized probability can yield the minimised Error-Function?
+
+An Error-Function tells us how far we are from the solution(it's a distance).
+ - It should be continuous!
+ - It should be differentiable! (just like minimizing SSE in linear model.)
+<img src="https://user-images.githubusercontent.com/31917400/41206106-c62ad73a-6cf6-11e8-8307-d38aeda8113a.jpg" />
+
 
 
 
@@ -650,14 +656,6 @@ What if the number of datapoints are astronomical? Then producting is not a good
 
 
 
-
-
-> Concept_01. **Error-Function**
-
-It tells us how far we are from the solution(it's a distance).
- - It should be continuous!
- - It should be differentiable! (just like minimizing SSE in linear model.)
-<img src="https://user-images.githubusercontent.com/31917400/41206106-c62ad73a-6cf6-11e8-8307-d38aeda8113a.jpg" />
 
 
 

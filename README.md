@@ -674,7 +674,7 @@ def cross_entropy(Y, P):
 <img src="https://user-images.githubusercontent.com/31917400/41241502-006d4a92-6d95-11e8-9a9e-bed37efbbccd.jpg" />
 
 ### > Multiclass Cross-Entropy
- - 1. **Softmax Function**: When the problem has 3 or more classes ? How to turn all scores(WX+b, which is a linear function) into probabilities?(of course, Sigmoid)
+ - 1. **Softmax Function**: When the problem has 3 or more classes ? How to turn all scores(WX+b) into probabilities?(of course, Sigmoid)
      - Note that scores often can be negative, and we need to calculate probability. See 'exp() of Sigmoid' can turn them into positive. 
 <img src="https://user-images.githubusercontent.com/31917400/41224711-06ad2c7c-6d65-11e8-8264-0f966ac381b3.jpg" />
 

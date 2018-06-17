@@ -715,7 +715,7 @@ def softmax(L):
    - **update_weights**: The function that updates the parameters with one gradient descent step.
 <img src="https://user-images.githubusercontent.com/31917400/41513133-d9daf9c0-728e-11e8-910e-daf29fec355d.jpg" />
 
- - Some helper functions for plotting and drawing lines
+ - Some helper functions for plotting and drawing lines.
 ```
 import matplotlib.pyplot as plt
 import numpy as np
@@ -734,6 +734,7 @@ def display(m, b, color='g--'):
     plt.plot(x, m*x+b, color)
 ```
 <img src="https://user-images.githubusercontent.com/31917400/41513149-4652008a-728f-11e8-8562-ac31b0ee9dff.jpg" />
+
 ```
 # Activation (sigmoid) function
 def sigmoid(x):

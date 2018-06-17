@@ -488,6 +488,7 @@ parameters (degree, C, Gamma)
  - Perceptron refers a combination of nodes (Here, `Step_func(Linear_func())`)
  - Application example: Perceptron can be a logical operator: AND, OR, NOT, XOR...
    - Take two inputs then returns an output.
+ - Interestingly, perceptron can classify the data that is not linearly separable. 
 <img src="https://user-images.githubusercontent.com/31917400/39961806-b1513700-5635-11e8-9edf-f3cde879577c.jpg" />
 
 ```

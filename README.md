@@ -707,29 +707,15 @@ def softmax(L):
 <img src="https://user-images.githubusercontent.com/31917400/41376136-3c9e671e-6f50-11e8-9982-4916a2e15e7f.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/41380684-ace25fa0-6f5d-11e8-88b4-827ec2b98fa8.jpg" />
 
-> Example
+> Example(Binary Classification)
  - Implementing the functions that build the gradient descent algorithm:
    - **sigmoid**: The sigmoid activation function.
    - **output_formula**: The formula for the prediction.
    - **error_formula**: The formula for the error at a point.
    - **update_weights**: The function that updates the parameters with one gradient descent step.
-```
-def sigmoid(x):
-    return 1 / (1 + np.exp(-x))
+<img src="https://user-images.githubusercontent.com/31917400/41513133-d9daf9c0-728e-11e8-910e-daf29fec355d.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41513149-4652008a-728f-11e8-8562-ac31b0ee9dff.jpg" />
 
-def output_formula(features, weights, bias):
-    return sigmoid(np.dot(features, weights) + bias)
-
-def error_formula(y, output):
-    return - y*np.log(output) - (1 - y) * np.log(1-output)
-
-def update_weights(x, y, weights, bias, learnrate):
-    output = output_formula(x, weights, bias)
-    d_error = -(y - output)
-    weights -= learnrate * d_error * x
-    bias -= learnrate * d_error
-    return weights, bias
-```
 
 
 

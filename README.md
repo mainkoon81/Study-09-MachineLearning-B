@@ -662,8 +662,8 @@ We here, define **Error-Function**, using Cross Entropy. If I have a bunch of ev
  - A good model gives a low cross-entropy and a bad model gives a high cross-entropy. So our goal has changed: 
    - **Minimize the Cross Entropy = Maximize the probability**
 <img src="https://user-images.githubusercontent.com/31917400/41236233-86a74a52-6d88-11e8-801e-6eeccc2afdec.jpg" />
-<img src="https://user-images.githubusercontent.com/31917400/41258451-180b7c72-6dc8-11e8-99d9-cacdb4f6efa6.jpg" />
-<img src="https://user-images.githubusercontent.com/31917400/41258664-ee295450-6dc8-11e8-9c71-a9ea330f8ad0.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41512585-d7d71318-7282-11e8-9367-81c111352ad9.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41512586-da54c540-7282-11e8-9231-7e2b1154294b.jpg" />
 
 ```
 def cross_entropy(Y, P):

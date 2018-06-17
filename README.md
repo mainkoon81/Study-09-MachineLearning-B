@@ -701,7 +701,7 @@ def softmax(L):
 ### Again, Cross Entropy is a connection between probabilities and error functions. We define our Error Function, using 'Cross Entropy'.
  - Error = each element of Cross Entropy `-ln(p)` or `-ln(q)`
  - What we need is just to minimize the Error-Function (minimize `Cross_Entropy / n`) !
-<img src="https://user-images.githubusercontent.com/31917400/41287452-a4c4686e-6e3a-11e8-8e4f-6af30eb339ac.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41512827-b2281224-7288-11e8-8e38-4e7902296675.jpg" />
 
 ### > Minimization of our Error-Function
 <img src="https://user-images.githubusercontent.com/31917400/41376136-3c9e671e-6f50-11e8-9982-4916a2e15e7f.jpg" />

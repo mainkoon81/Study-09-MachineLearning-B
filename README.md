@@ -552,8 +552,14 @@ bias = 1.0
 ## What does the perceptron look like?
 <img src="https://user-images.githubusercontent.com/31917400/41501558-d9050b76-719e-11e8-9ff2-cdd40987ce51.jpg" />
 
-### Two Building blocks
- - This is about the automatic process for model improvement **by adjusting parameters(W, b) of the Linear Model**.
+> This is the building block of all that constitutes Deep Learning.
+> - Take your data
+> - **Pick a random model**
+> - Calculate the error
+> - **Minimize the Error-Function, and obtain a better model**
+
+### Two Algorithms
+ - They are about the automatic process for model improvement **by adjusting parameters(W, b) of the Linear Model**.
 <img src="https://user-images.githubusercontent.com/31917400/41501991-2259c732-71a7-11e8-957f-9bb84b41a21d.jpg" />
 
  - **Perceptron Algorithm**: 
@@ -696,12 +702,6 @@ def softmax(L):
  - Error = each element of Cross Entropy `-ln(p)` or `-ln(q)`
  - What we need is just to minimize the Error-Function (minimize `Cross_Entropy / n`) !
 <img src="https://user-images.githubusercontent.com/31917400/41287452-a4c4686e-6e3a-11e8-8e4f-6af30eb339ac.jpg" />
-
-> This is the building block of all that constitutes Deep Learning.
-> - Take your data
-> - Pick a random model
-> - Calculate the error
-> - **Minimize the Error-Function, and obtain a better model**
 
 ### > Minimization of our Error-Function
 <img src="https://user-images.githubusercontent.com/31917400/41376136-3c9e671e-6f50-11e8-9982-4916a2e15e7f.jpg" />

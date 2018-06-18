@@ -704,7 +704,7 @@ def softmax(L):
 <img src="https://user-images.githubusercontent.com/31917400/41512827-b2281224-7288-11e8-8e38-4e7902296675.jpg" />
 
 ### > Minimization of our Error-Function
-<img src="https://user-images.githubusercontent.com/31917400/41376136-3c9e671e-6f50-11e8-9982-4916a2e15e7f.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41513391-314c89cc-7293-11e8-850a-c6484ebb4afb.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/41380684-ace25fa0-6f5d-11e8-88b4-827ec2b98fa8.jpg" />
 
 > Example(Binary Classification)

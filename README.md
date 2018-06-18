@@ -676,9 +676,9 @@ def cross_entropy(Y, P):
 ### > Multiclass Cross-Entropy
  - 1. **Softmax Function**: When the problem has 3 or more classes ? How to turn all scores(WX+b) into probabilities?
      - Note that scores often can be negative, and we need to calculate probability. See 'exp()' can turn them into positive. 
-<img src="https://user-images.githubusercontent.com/31917400/41224711-06ad2c7c-6d65-11e8-8264-0f966ac381b3.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/41536526-c5a39a42-72fd-11e8-9a3e-209b2097ecc7.jpg" />
 
-     - Let's say we have 'n' classes and our linear model(WX+b) gives us the score: Z_1...Z_n, each score for each class. Let's turn them into probabilities. Takes as input a list of numbers(scores), and returns the list of values(possibilities) given by the softmax function.
+Let's say we have 'n' classes and our linear model(WX+b) gives us the score: Z_1...Z_n, each score for each class. Let's turn them into probabilities. Takes as input a list of numbers(scores), and returns the list of values(possibilities) given by the softmax function.
 ```
 def softmax(L):
     expL = np.exp(L)

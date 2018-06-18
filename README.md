@@ -486,6 +486,7 @@ parameters (degree, C, Gamma)
  
 ### Perceptron Example(logical operator)
  - Perceptron refers a combination of nodes (Here, `Step_func(Linear_func())`)
+ - Perceptron is the simplest Neural Network.
  - Application example: Perceptron can be a logical operator: AND, OR, NOT, XOR...
    - Take two inputs then returns an output.
  - Interestingly, perceptron can classify the data that is not linearly separable. 

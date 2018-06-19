@@ -479,12 +479,14 @@ parameters (degree, C, Gamma)
 ## (E) Perceptron Algorithm
  - For categoric data (Y/N)
  - 
+ - This is the two model example.
 <img src="https://user-images.githubusercontent.com/31917400/39047770-10482214-4493-11e8-8103-03c5425c0534.jpg" />   
  
- - Our model has 'input data-pt', 'weights', 'bias'
+ - The model has 'input data-pt', 'weights', 'bias'
 <img src="https://user-images.githubusercontent.com/31917400/39957980-d507b40e-55f3-11e8-80e1-debf35768067.jpg" />
  
 > Perceptron refers a combination of nodes (Here, `Step_func(Linear_func())`)
+
 > Perceptron is the simplest Neural Network.
 
 ## What does the perceptron look like?

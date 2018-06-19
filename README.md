@@ -485,7 +485,7 @@ parameters (degree, C, Gamma)
  - The model has 'input data-pt', 'weights', 'bias'
 <img src="https://user-images.githubusercontent.com/31917400/39957980-d507b40e-55f3-11e8-80e1-debf35768067.jpg" />
  
-> Perceptron refers a combination of nodes (Here, `Step_func(Linear_func())`)
+> Perceptron refers a combination of nodes (Here, `Step_func(LinearModel)`)
 
 > Perceptron is the simplest Neural Network.
 

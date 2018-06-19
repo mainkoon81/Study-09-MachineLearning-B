@@ -484,71 +484,8 @@ parameters (degree, C, Gamma)
  - Our model has 'input data-pt', 'weights', 'bias'
 <img src="https://user-images.githubusercontent.com/31917400/39957980-d507b40e-55f3-11e8-80e1-debf35768067.jpg" />
  
-### Perceptron Example(logical operator)
- - Perceptron refers a combination of nodes (Here, `Step_func(Linear_func())`)
- - Perceptron is the simplest Neural Network.
- - Application example: Perceptron can be a logical operator: AND, OR, NOT, XOR...
-   - Take two inputs then returns an output.
- - Interestingly, perceptron can classify the data that is not linearly separable. 
-<img src="https://user-images.githubusercontent.com/31917400/39961806-b1513700-5635-11e8-9edf-f3cde879577c.jpg" />
-
-```
-import pandas as pd
-
-test_inputs = [(0, 0), (0, 1), (1, 0), (1, 1)]
-correct_outputs = [False, False, False, True]
-outputs = []
-
-for test_input, correct_output in zip(test_inputs, correct_outputs):
-    linear_combination = weight1 * test_input[0] + weight2 * test_input[1] + bias
-    output = int(linear_combination >= 0)
-    is_correct_string = 'Yes' if output == correct_output else 'No'
-    outputs.append([test_input[0], test_input[1], linear_combination, output, is_correct_string])
-
-num_wrong = len([output[4] for output in outputs if output[4] == 'No'])
-output_frame = pd.DataFrame(outputs, columns=['Input 1', '  Input 2', '  Linear Combination', '  Activation Output', '  Is Correct'])
-if not num_wrong:
-    print('Nice!  You got it all correct.\n')
-else:
-    print('You got {} wrong.  Keep trying!\n'.format(num_wrong))
-print(output_frame.to_string(index=False))
-```
-1) **AND** Perceptron: weights and bias ?
-```
-weight1 = 1.0
-weight2 = 1.0
-bias = -2.0
-```
-2) **OR** Perceptron: weights and bias ?
- - two ways to go from an AND perceptron to an OR perceptron.
-   - increase the weights
-   - decrease the magnitude of the bias
-```
-weight1 = 2.0
-weight2 = 2.0
-bias = -2.0
-
-weight1 = 1.0
-weight2 = 1.0
-bias = -1.0
-```
-3) **NOT** Perceptron: weights and bias ? 
- - the NOT operation only cares about one input. 
-   - The operation returns a '0' **if the input is 1**.  
-   - The operation returns a '1' **if it's a 0**. 
-   - The other inputs to the perceptron are ignored. If we ignore the first input, then...
-```
-weight1 = 0.0
-weight2 = -2.0
-bias = 1.0
-```
-4) **XOR** Multi-Layer Perceptron(cross-OR ?)
- - [**What if it's impossible to build the decision surface ?**]
-   - Combine perceptions: "the output of one = the input of another one"...'Neural Network'
-<img src="https://user-images.githubusercontent.com/31917400/39961747-d552235e-5634-11e8-99ce-aed8a2aae548.jpg" />
-
-
-
+> Perceptron refers a combination of nodes (Here, `Step_func(Linear_func())`)
+> Perceptron is the simplest Neural Network.
 
 ## What does the perceptron look like?
 <img src="https://user-images.githubusercontent.com/31917400/41501558-d9050b76-719e-11e8-9ff2-cdd40987ce51.jpg" />

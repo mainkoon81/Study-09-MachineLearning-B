@@ -644,6 +644,8 @@ def softmax(L):
 <img src="https://user-images.githubusercontent.com/31917400/41512827-b2281224-7288-11e8-8e38-4e7902296675.jpg" />
 
 ### > Minimization of our Error-Function
+How to minimize the Error? 
+ - knowing the current inputs into the model(the current weight and bias), the derivatives of the loss function tell us which direction to nudge W and b in order to minimize the error.
 <img src="https://user-images.githubusercontent.com/31917400/41513391-314c89cc-7293-11e8-850a-c6484ebb4afb.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/41380684-ace25fa0-6f5d-11e8-88b4-827ec2b98fa8.jpg" />
 

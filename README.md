@@ -302,7 +302,7 @@ model = AdaBoostClassifier(base_estimator = DecisionTreeClassifier(max_depth=2),
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## (C) Naive Bayes
  - For categoric data
- - In contingency table we have rows(features) and columns(event/non_event). First, we need to know if rows(features) are independent each other. Of course rows and columns are not independent, they are subject to the conditional prob `P(E|A)`, but when independent features are too many, `P(E|A,B,C,D,...)` we know this is where the **Naive_Bayes** come into play. We know multiplication works when finding the **joint probability** of multiple independent features.  
+ - `In contingency table`, we have rows(features) and columns(event/non_event). First, we need to know if rows(features) are independent each other. Of course rows and columns are not independent, they are subject to the conditional prob `P(E|A)`, but when independent features are too many, `P(E|A,B,C,D,...)` we know this is where the **Naive_Bayes** come into play. We know multiplication works when finding the **joint probability** of multiple independent features.  
  
 > PREDICTION: when future emails come, we can combine these features to guess if they are spam or not. 
 <img src="https://user-images.githubusercontent.com/31917400/39019180-5566df3e-4420-11e8-9f87-dad95387ce6c.jpg" />

@@ -2,7 +2,7 @@
  - Let's find the Decision Surface!
 ----------------------------------------------------------------------------------------------------------------------------------------
 ## (A1) Linear Regression (when 'y' follows Normal-Dist)
- - For numeric data
+ - For numeric data point
 ##### Single value
 ```
 from sklearn.linear_model import LinearRegression

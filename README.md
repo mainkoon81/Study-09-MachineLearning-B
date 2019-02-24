@@ -313,7 +313,8 @@ model = AdaBoostClassifier(base_estimator = DecisionTreeClassifier(max_depth=2),
 ## (C) Naive Bayes
  - For categoric data
  - `In contingency table`, we have rows(features) and columns(event/non_event). First, we need to know if rows(features) are independent each other. Of course rows and columns are not independent, they are subject to the conditional prob `P(E|A)`, but when independent features are too many, `P(E|A,B,C,D,...)` we know this is where the **Naive_Bayes** come into play. We know multiplication works when finding the **joint probability** of multiple independent features.  
- 
+<img src="https://user-images.githubusercontent.com/31917400/53305289-bc202e00-3877-11e9-8abc-761d008a328c.jpg" />
+
 > PREDICTION: when future emails come, we can combine these features to guess if they are spam or not. 
 <img src="https://user-images.githubusercontent.com/31917400/39019180-5566df3e-4420-11e8-9f87-dad95387ce6c.jpg" />
 
@@ -374,6 +375,7 @@ Usually they have words like 'free', 'win', 'winner', 'cash', 'prize' and the li
  - Step 7: Conclusion
 > Curse of Dimensionality
  - As the number of descriptive **features grows**, the number of potential **conditioning events grows**. Consequently, an exponential increase is required in the `size of the dataset` as each new descriptive feature is added to ensure that for any conditional probability there are enough instances in the training dataset matching the conditions so that the resulting probability is reasonable.
+
 
 
 --------------------------------------------------------------------------------------------------------------------------------------

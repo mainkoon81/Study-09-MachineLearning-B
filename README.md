@@ -372,7 +372,8 @@ Usually they have words like 'free', 'win', 'winner', 'cash', 'prize' and the li
  - Step 5: Naive Bayes implementation using scikit-learn
  - Step 6: Evaluating our model
  - Step 7: Conclusion
-
+> Curse of Dimensionality
+ - As the number of descriptive **features grows**, the number of potential **conditioning events grows**. Consequently, an exponential increase is required in the `size of the dataset` as each new descriptive feature is added to ensure that for any conditional probability there are enough instances in the training dataset matching the conditions so that the resulting probability is reasonable.
 
 
 --------------------------------------------------------------------------------------------------------------------------------------

@@ -230,6 +230,8 @@ def submitAccuracies():
 <img src="https://user-images.githubusercontent.com/31917400/53396015-4c0ac880-399b-11e9-9cfc-c99c3cf308ba.jpg" /> 
 <img src="https://user-images.githubusercontent.com/31917400/38379058-77c82d46-38f7-11e8-97f3-4583e6b0255b.jpg" />  
 
+# Entropy measures `variance` in categorical variables. 
+
 If we have a categorical veriable that consists of entry (a, b). Let's say p(a)=0.5, p(b)=0.5, then our entropy is
 ```
 import math

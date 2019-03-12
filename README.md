@@ -34,33 +34,15 @@ model.predict(sample_house)
 ```
 array([ 23.68420569])
 
-## (A2) Linear Regression - Generalized_01 (Logistic: when 'y' follows Binomial Dist)
- - For categoric data
- - For **binary** classification
- - The dependent variable must be categorical, and the explanatory variables can take any form.
- - But before fitting on the data, we need to convert the categorical predictors into the numeric(using `pd.get_dummies(series)[which level is '1'?]`). This is called:
-   - `One-Hot Encoding` when there is no ordinal levels (red, blue,..=> check(1), uncheck(0),..)
-   - `Integer Encoding` when there is ordinal levels (first, second,..=> 1,2..) 
-   - http://pbpython.com/categorical-encoding.html
- - Linear models are the most useful applied statistical technique. However, they are not without their limitations. Additive response models don’t make much sense if the response is discrete, or strictly positive. Additive error models often don’t make sense, for example, if the outcome has to be positive. Transformations, such as taking a cube root of a count outcome, are often hard to interpret. In addition, there’s value in modeling the data on the scale that it was collected. Particularly interpretable transformations, natural logarithms in specific, aren’t applicable for negative or zero values.
+## (A2) Logistic Regression 
+Linear models are the most useful applied statistical technique. However, they are not without their limitations. Additive response models don’t make much sense if the response is discrete, or strictly positive. Additive error models often don’t make sense, for example, if the outcome has to be positive. Transformations, such as taking a cube root of a count outcome, are often hard to interpret. In addition, there’s value in modeling the data on the scale that it was collected. Particularly interpretable transformations, natural logarithms in specific, aren’t applicable for negative or zero values.
 
 The generalized linear model is family of models that includes linear models. By extending the family, it handles many of the issues with linear models, but at the expense of some complexity and loss of some of the mathematical tidiness. A GLM involves three components.
-
  - An exponential family model for the response.
  - A systematic component via a linear predictor.
  - A link function that connects the means of the response to the linear predictor.
 
 The three most famous cases of GLMs are: linear models, binomial and binary regression and Poisson regression. We’ll go through the GLM model specification and likelihood for all three. 
-
-
-> PREDICTION: based on the line best cut the data, we can guess 'pass/fail' of new student.
- - The number of errors is not what we want to minimize.
- - Instead we want to minimize sth that captures the number of errors called 'Log-loss function'.
-   - The 'error function' will assign a large/small **penalty** to the incorrectly/correctly classified points.  
-   - then we juggle the line around to minimize the sum of penalities(minimizing the error function)
-   - Here, 'p' is the probability or proportion.
-<img src="https://user-images.githubusercontent.com/31917400/39021406-93efa878-4428-11e8-8bac-04d841fbbf16.jpg" />
-<img src="https://user-images.githubusercontent.com/31917400/34471521-d497e2bc-ef43-11e7-8e70-5d232b659be0.jpg" />
 
 **Typical Approach**
  - Fitting a logistic regression to a dataset where we would like to predict if a transaction is fraud or not.

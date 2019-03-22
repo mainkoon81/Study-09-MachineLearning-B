@@ -459,12 +459,25 @@ parameters (degree, C, Gamma)
 <img src="https://user-images.githubusercontent.com/31917400/35127560-923ca17c-fcaa-11e7-81ca-e4db864ccc96.jpg" />  
 
 ## SV-Regression
-Support Vector Machines are very specific class of algorithms, characterized by usage of kernels, absence of local minima, sparseness of the solution and capacity control obtained by acting on the margin, or on number of support vectors, etc. Interestingly, it can be applied not only to classification problems but also to the case of regression. Still it contains all the main features that characterize maximum margin algorithm: a non-linear function is leaned by linear learning machine mapping into high dimensional kernel induced feature space. The capacity of the system is controlled by parameters that do not depend on the dimensionality of feature space. In the same way as with classification approach there is motivation to seek and optimize the generalization bounds given for regression. They relied on defining the loss function that ignores errors, which are situated within the certain distance of the true value. This type of function is often called – epsilon intensive – loss function. The variables measure the cost of the errors on the training points. These are zero for all points that are inside the band(Margin). One of the most important ideas in Support Vector Classification and Regression cases is that presenting the solution by means of small subset of training points gives enormous computational advantages. Using the epsilon intensive loss function we ensure existence of the global minimum and at the same time optimization of reliable generalization bound. 
+Support Vector Machines are very specific class of algorithms, characterized by 
+ - **usage of kernels**, 
+ - **absence of local minima**, 
+ - **sparseness of the solution**
+ - **capacity control** obtained by acting on the margin, or on number of support vectors, etc. 
 
+Interestingly, it can be applied not only to classification problems but also to the case of regression. Still it contains all the main features that characterize `maximum margin algorithm`: a non-linear function is leaned by linear learning machine mapping into high dimensional kernel induced feature space. The **capacity of the system** is controlled by parameters that do not depend on the dimensionality of feature space. In the same way as with classification approach there is motivation to seek and optimize the generalization bounds given for regression. They relied on defining the loss function that ignores errors, which are situated within the certain distance of the true value. This type of function is often called – epsilon intensive – loss function. The variables measure the cost of the errors on the training points. These are zero for all points that are inside the band(Margin). 
 
+> One of the most important ideas in Support Vector Classification and Regression cases is that presenting the solution by means of **small subset of training points gives enormous computational advantages**. Using the **epsilon intensive loss function** we ensure existence of the global minimum and at the same time optimization of reliable generalization bound. 
 
+> Intuitively, as all regressors it tries to fit a line to data by minimising a cost function. However, the interesting part about SVR is that you can deploy a non-linear kernel, making **non-linear regression**. The model is represented as combinations of the training points rather than a function of the features and some weights. 
 
+__Classification__
+ - **Goal:** Find a function `f(x)=wx+b` where `f(x)≥1` for **positive examples** and `f(x)≤−1` for **negative examples**.
+ - **HOW:** maximise the margin, which is nothing more than **minimising** the derivative of `f′` which is **`w`**. Kill the slope. 
+ 
 
+__Regression__
+ - **Goal:**  
 
 
 -------------------------------------------------------------------------------------------------------------------------------------

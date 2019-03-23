@@ -465,19 +465,28 @@ Support Vector Machines are very specific class of algorithms, characterized by
  - **sparseness of the solution**
  - **capacity control** obtained by acting on the margin, or on number of support vectors, etc. 
 
-Interestingly, it can be applied not only to classification problems but also to the case of regression. Still it contains all the main features that characterize `maximum margin algorithm`: a non-linear function is leaned by linear learning machine mapping into high dimensional kernel induced feature space. The **capacity of the system** is controlled by parameters that do not depend on the dimensionality of feature space. In the same way as with classification approach there is motivation to seek and optimize the generalization bounds given for regression. They relied on defining the loss function that ignores errors, which are situated within the certain distance of the true value. This type of function is often called – epsilon intensive – loss function. The variables measure the cost of the errors on the training points. These are zero for all points that are inside the band(Margin). 
+> Intuitively, as all regressors, it tries to fit a line to data by minimising a cost function. However, the interesting part about SVR is that you can deploy a non-linear kernel, making **non-linear regression**. The model is represented as combinations of the training points rather than a function of the features and some weights. 
+
+It can be applied not only to classification problems but also to the case of regression. Still it contains all the main features that characterize `maximum margin algorithm`: 
+ - A **non-linear function** is leaned by linear learning machine mapping into high dimensional kernel induced feature space. 
+ - The **capacity of the system** is controlled by parameters that do not depend on the dimensionality of feature space. 
+ - In the same way as with classification approach there is motivation to seek and optimize the generalization bounds given for regression. They relied on defining the loss function that ignores errors, which are situated within the certain distance of the true value. This type of function is often called – epsilon intensive – loss function. The variables measure the cost of the errors on the training points. These are zero for all points that are inside the band(Margin). 
 
 > One of the most important ideas in Support Vector Classification and Regression cases is that presenting the solution by means of **small subset of training points gives enormous computational advantages**. Using the **epsilon intensive loss function** we ensure existence of the global minimum and at the same time optimization of reliable generalization bound. 
 
-> Intuitively, as all regressors it tries to fit a line to data by minimising a cost function. However, the interesting part about SVR is that you can deploy a non-linear kernel, making **non-linear regression**. The model is represented as combinations of the training points rather than a function of the features and some weights. 
+Under the condition that:
+ - All examples are classified correctly...(for Classification)
+ - The value y of all examples deviates less than ϵ from f(x)...(for Regression)
 
 __Classification__
  - **Goal:** Find a function `f(x)=wx+b` where `f(x)≥1` for **positive examples** and `f(x)≤−1` for **negative examples**.
- - **HOW:** maximise the margin, which is nothing more than **minimising** the derivative of `f′` which is **`w`**. Kill the slope. 
- 
+ - **HOW:** `Maximise the margin`, which is nothing more than **minimising** the derivative of `f′` which is **`w`**. Kill the slope. 
+ - **Intuition:** `Maximising the margin` means that this will give us a unique solution to the problem of finding `f(x)=wx+b`. In SVM for classification problem we actually try to separate the class as far as possible from the separating line (Hyperplane) and unlike logistic regression, we create a safety boundary from both sides of the hyperplane (different between logistic regression and SVM classification is in their loss function). Eventually, having a separated different data points as far as possible from hyperplane. 
 
 __Regression__
- - **Goal:**  
+ - **Goal:**  Find a function `f(x)=wx+b` (red line) under the condition that `f(x)` is within a required accuracy **`ϵ`** from the value value y(x) (black bars) of every data point, i.e. `|y−f(x)|≤ϵ` where epsilon is the distance b/w the red and the grey line. 
+ - **HOW:** Under this condition we again want to minimise `f′(x)=w`, again for the reason of regularisation and to obtain a unique solution as the result of the convex optimisation problem. One can see how minimising w results in a more general case as the extreme value of w=0 would mean no functional relation at all which is the most general result one can obtain from the data.
+ - **Intuition:** In SVM for regression problem, We want to fit a model to predict a quantity for future. Therefore, we want the data point(observation) to be as close as possible to the hyperplane unlike SVM for classification. The SVM regression inherited from Simple Regression like (Ordinary Least Square) by this difference that we define an epsilon range from both sides of hyperplane to make the regression function insensitive to the error unlike SVM for classification that we define a boundary to be safe for making the future decision(prediction). Eventually, SVM in Regression has a boundary like SVM in classification but the boundary for Regression is for making the regression function insensitive respect to the error but the boundary for classification is only to be way far from hyperplane(decision boundary) to distinguish between class for future (that is why we call it safety margin).
 
 <img src="https://user-images.githubusercontent.com/31917400/54835736-a9ecb080-4cba-11e9-8f60-7ae01ee90dbf.jpg" />   
 

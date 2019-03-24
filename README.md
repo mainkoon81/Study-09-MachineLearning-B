@@ -512,6 +512,10 @@ Why do we need NN? Because SO MANY FEATURESSSSS !!!
 ## What does the perceptron look like?
 <img src="https://user-images.githubusercontent.com/31917400/41501558-d9050b76-719e-11e8-9ff2-cdd40987ce51.jpg" />
 
+> A single node(except the input_node) made out of
+ - Multiple Linear Model
+ - Activation function
+ - the single output
 > This is the building block of all that constitutes Deep Learning.
 > - Take your data
 > - **Pick a random model**

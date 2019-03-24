@@ -507,7 +507,7 @@ Why do we need NN? Because SO MANY FEATURESSSSS !!!
  - The model has 'input data-pt', 'weights', 'bias'
 <img src="https://user-images.githubusercontent.com/31917400/39957980-d507b40e-55f3-11e8-80e1-debf35768067.jpg" />
  
-> As the simplest Neural Network, Perceptron refers a combination of nodes (Here, `Step_func(LinearModel)`)
+> As the simplest Neural Network, Perceptron refers a combination of nodes (Here, `Step_func(LinearModel)` coz it simply says 1 / 0)
 
 ## What does the perceptron look like?
 <img src="https://user-images.githubusercontent.com/31917400/41501558-d9050b76-719e-11e8-9ff2-cdd40987ce51.jpg" />

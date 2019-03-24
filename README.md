@@ -501,7 +501,7 @@ Why do we need NN? Because SO MANY FEATURESSSSS !!!
 
  - For classification (Y/N)
  - For regression (numbers)
- - This is the two model example.
+ - This is the two model example. Here we simply go with **linear** rather than quadratic.
 <img src="https://user-images.githubusercontent.com/31917400/39047770-10482214-4493-11e8-8103-03c5425c0534.jpg" />   
  
  - The model has 'input data-pt', 'weights', 'bias'

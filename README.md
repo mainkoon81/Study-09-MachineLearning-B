@@ -518,7 +518,7 @@ Why do we need NN? Because SO MANY FEATURESSSSS !!!
  - the single output
 
 ### Two Algorithms
- - They are about the automatic process for model improvement **by adjusting parameters(W, b) of the Linear Model**.
+ - They are about the automatic process for model improvement **by adjusting parameters(W, b) of the Multiple Linear Model**.
    - Take your data
    - **Pick a random decision surface**
    - Calculate the error

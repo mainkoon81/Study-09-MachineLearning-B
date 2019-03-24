@@ -518,9 +518,9 @@ Why do we need NN? Because SO MANY FEATURESSSSS !!!
  - the single output
 > This is the building block of all that constitutes Deep Learning.
 > - Take your data
-> - **Pick a random model**
+> - **Pick a random decision surface**
 > - Calculate the error
-> - **Minimize the Error-Function, and obtain a better model**
+> - **Minimize the Error-Function, and obtain a better surface**
 
 ### Two Algorithms
  - They are about the automatic process for model improvement **by adjusting parameters(W, b) of the Linear Model**.

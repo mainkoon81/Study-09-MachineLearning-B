@@ -497,7 +497,7 @@ __Regression__
 -------------------------------------------------------------------------------------------------------------------------------------
 ## (E) Perceptron Algorithm
 Why do we need NN? Because SO MANY FEATURESSSSS !!!
-<img src="https://user-images.githubusercontent.com/31917400/54886475-2bda0680-4e80-11e9-8805-a164172147bb.jpg" />   
+<img src="https://user-images.githubusercontent.com/31917400/54886841-78bfdc00-4e84-11e9-8b5a-925f8cf75735.jpg" />   
 
  - For classification (Y/N)
  - For regression (numbers)

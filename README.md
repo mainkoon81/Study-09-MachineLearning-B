@@ -516,15 +516,14 @@ Why do we need NN? Because SO MANY FEATURESSSSS !!!
  - Multiple Linear Model
  - Activation function
  - the single output
-> This is the building block of all that constitutes Deep Learning.
-> - Take your data
-> - **Pick a random decision surface**
-> - Calculate the error
-> - **Minimize the Error-Function, and obtain a better surface**
 
 ### Two Algorithms
  - They are about the automatic process for model improvement **by adjusting parameters(W, b) of the Linear Model**.
-<img src="https://user-images.githubusercontent.com/31917400/41501991-2259c732-71a7-11e8-957f-9bb84b41a21d.jpg" />
+   - Take your data
+   - **Pick a random decision surface**
+   - Calculate the error
+   - **Minimize the Error-Function, and obtain a better surface**
+ <img src="https://user-images.githubusercontent.com/31917400/41501991-2259c732-71a7-11e8-957f-9bb84b41a21d.jpg" />
 
  - **Perceptron Algorithm**: 
    - Focus on the missclassified points(it will give the direction)
@@ -534,7 +533,7 @@ Why do we need NN? Because SO MANY FEATURESSSSS !!!
    - Focus on 
    - Because of the Sigmoid function, y and y_hat have the value of `probability`.
    - Thus, the difference between **y** and **y_hat** is `-1 < values < 1`. 
-<img src="https://user-images.githubusercontent.com/31917400/41501829-b2dc425c-71a3-11e8-8720-985f52975d8d.jpg" />
+ <img src="https://user-images.githubusercontent.com/31917400/41501829-b2dc425c-71a3-11e8-8720-985f52975d8d.jpg" />
 
 # We want to improve our model!
 ## 1> Perceptron Trick(with Step function) 

@@ -142,7 +142,7 @@ ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
 --------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## (B) DecisionTree
- - For categoric data
+ - For continuous, categoric data
  - For **non-binary** classification
  
 > PREDICTION: based on the features, we can guess the apps that the future users would download.  
@@ -279,6 +279,12 @@ When we define the model, we can specify the **hyperparameters**. In practice, t
 from sklearn.tree import DecisionTreeClassifier
 model = AdaBoostClassifier(base_estimator = DecisionTreeClassifier(max_depth=2), n_estimators = 4)
 ```
+
+> Decision Tree Regression
+ - `Predicted output  = average of the training examples in the subset` 
+ - It requires a different definition of entropy
+ - We can use **linear regression at the leaves** !!
+
 
 --------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

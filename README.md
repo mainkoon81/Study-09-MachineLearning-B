@@ -289,7 +289,8 @@ model = AdaBoostClassifier(base_estimator = DecisionTreeClassifier(max_depth=2),
 --------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## (C) Naive Bayes
- - For categoric data
+ - For categoric, continuous data
+   - For continuous, you need to build the probablistic distribution based on the data and plug the new data in. 
  - `In contingency table`, we have rows(features) and columns(event/non_event). First, we need to know if rows(features) are independent each other. Of course rows and columns are not independent, they are subject to the conditional prob `P(E|A)`, but when independent features are too many, `P(E|A,B,C,D,...)` we know this is where the **Naive_Bayes** come into play. We know multiplication works when finding the **joint probability** of multiple independent features.  
 <img src="https://user-images.githubusercontent.com/31917400/57195928-aaca6080-6f4f-11e9-9b76-039f6afb4b97.jpg" />
 

@@ -505,7 +505,7 @@ __Regression__
 ## (E) Perceptron Algorithm
 Why do we need NN? Because SO MANY FEATURESSSSS !!!
 
-NN's each "node" is a linear model(classifier) with so many featuresssss whose weights(parameters) are updated by the optimization algorithm like a Gradient_Descent that minimizing the cost function(MSE, CrossEntropy, ), and this linear model(classifier) becomes the input of the activation function (step for discrete, sigmoid for continous) that returns the outcome of either classification/probability.  
+### `NN's each "NODE" is a linear model(classifier) with so many featuresssss whose weights(parameters) are updated by the optimization algorithm like a Gradient_Descent that minimizing the cost function(MSE, CrossEntropy, ), and this linear model(classifier) becomes the input of the activation function (step for discrete, sigmoid for continous) that returns the outcome of either classification/probability`.  
 
 <img src="https://user-images.githubusercontent.com/31917400/54886841-78bfdc00-4e84-11e9-8b5a-925f8cf75735.jpg" />   
 

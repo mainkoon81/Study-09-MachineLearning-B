@@ -535,11 +535,11 @@ Why do we need NN? Because SO MANY FEATURESSSSS !!!
  - **Perceptron Algorithm**: 
    - Focus on the missclassified points(it will give the direction)
    - Because of the Step function, y and y_hat have the value of `0 / 1`.
-   - Thus, the difference between **y** and **y_hat** is `1` or `-1` or `0`. 
+   - Thus, the difference between **y** and **y_hat** is `1` or `-1` or `0`. We want it as close as "0"
  - **Gradient_Descent Algorithm**: 
-   - Focus on 
+   - Focus on ?
    - Because of the Sigmoid function, y and y_hat have the value of `probability`.
-   - Thus, the difference between **y** and **y_hat** is `-1 < values < 1`. 
+   - Thus, the difference between **y** and **y_hat** is `-1 < values < 1`. We want it as close as "0"
    - Or...instead of `y - y_hat`, use the **derivative** of the cost function like a **`MSE`** because....at the end of the day, both have a goal of **minimization**! 
  <img src="https://user-images.githubusercontent.com/31917400/41501829-b2dc425c-71a3-11e8-8720-985f52975d8d.jpg" />
 

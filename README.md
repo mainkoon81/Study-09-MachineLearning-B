@@ -629,6 +629,8 @@ Let's say we want to calculate **probability** the four points are of the **colo
 > Q. **What if the number of datapoints are astronomical?** Then producting is not a good idea. We again need a log-function that turns products into sums...and remember..when input is ranged from 0 to 1(coz..they are probabilities), the logarithm gives negative. And this is the **Entropy** function. 
 
 ### > Cross Entropy
+As always, we don't like a huge entropy value.. 
+
 We here, define **Error-Function**, using Cross Entropy. If I have a bunch of events and probabilities, Cross-Entropy says **how likely those events happen based on the probabilities**. If it's highly likely, then we have a small Cross-Entropy. If it's unlikely, we have a large Cross-Entropy. 
  - A good model gives a low cross-entropy and a bad model gives a high cross-entropy. So our goal has changed: 
    - **Minimize the Cross Entropy = Maximize the probability**

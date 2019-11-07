@@ -540,6 +540,7 @@ Why do we need NN? Because SO MANY FEATURESSSSS !!!
    - Focus on 
    - Because of the Sigmoid function, y and y_hat have the value of `probability`.
    - Thus, the difference between **y** and **y_hat** is `-1 < values < 1`. 
+   - Or...instead of `y - y_hat`, use the **derivative** of the cost function like a **`MSE`**. 
  <img src="https://user-images.githubusercontent.com/31917400/41501829-b2dc425c-71a3-11e8-8720-985f52975d8d.jpg" />
 
 # We want to improve our model!
